@@ -90,26 +90,15 @@ body {
     width: 100%;
 }
 
-
-.typed_wrap h1 {
-  display: inline;
+.typed-cursor {
+  font-weight: 100;
+  padding: 0 2px;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
-
-/*Add custom cursor so it auto inherits font styles*/
-.typed::after {
-  content: '|';
-  display: inline;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-/*Removes cursor that comes with typed.js*/
-.typed-cursor{
-   opacity: 0;
-  display: none;
-}
-/*Custom cursor animation*/
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -126,5 +115,22 @@ body {
     100% { opacity:1; }
 }
 
+.subtext {
+  margin-bottom: 0px;
+  line-height: 2em;
+  font-size: 16px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
 
-
+.lift-text .text {
+  margin-top: 0;
+}
+.lift-text .subtext {
+  opacity: 1;
+}
