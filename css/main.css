@@ -116,6 +116,7 @@ body {
 }
 
 .subtext {
+   opacity: 0;
   margin-bottom: 0px;
   line-height: 2em;
   font-size: 16px;
@@ -128,9 +129,9 @@ body {
   transition: all 1.2s ease-in-out;
 }
 
-.lift-text .text {
+.appear .text {
   margin-top: 0;
 }
-.lift-text .subtext {
+.appear .subtext {
   opacity: 1;
 }
