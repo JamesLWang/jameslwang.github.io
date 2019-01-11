@@ -1,0 +1,60 @@
+
+section {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.31);
+}
+body {
+    font-family: "Lato", Helvetica Neue, Helvetica, sans-serif;
+    color: #323232;
+    height: 100%;
+    width: 100%;
+}
+
+.fixed{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width:100%;
+}
+
+.bar{
+  width:60px;
+  border-bottom: 3px solid white;
+  margin:0 auto;
+}
+#splash{
+  position: absolute;
+  background: linear-gradient(rgba(37, 91, 180, 0.9), rgba(12, 27, 55, 0.9)), url("../assets/background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.5em; }
+}
+
+#splash .content{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+
+}
+#splash .name{
+    font-family: "Montserrat", Helvetica Neue, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-size: 1.3em;
+}
+
+#splash .icons i {
+    margin: 0 12px;
+    opacity: .5;
+    color: white;
+    transition-duration: .2s;
+}
+
+#splash p{
+  margin: 0;
+  padding: 18px;
+}
+
+
