@@ -92,20 +92,22 @@ html, body {
 }
 
 
-.background{
-  overflow-y: hidden;
-}
 
 @media (min-width: 992px) { 
- .background{
+
+.background-mobi{
+	display: none;
+}
+
+ .background-wide{
     margin-left: 22%;
     overflow-y: hidden;
 }
 
-.background div img{
+.background-wide div img{
     z-index:-2; 
     background-size:cover;
-    position:absolute;
+    position:fixed;
     height:100%;
     width:78%;
   }
@@ -113,14 +115,18 @@ html, body {
 }
 
 @media (max-width: 992px) { 
-.background div img{
+.background-mobi div img{
     z-index:-2; 
     background-size:cover;
     position:absolute;
-    height:100%;
-    width:auto;
+    height:auto;
+    width:100%;
     overflow-x: hidden;
   }
+
+  .background-wide{
+	display: none;
+}
 }
 
 

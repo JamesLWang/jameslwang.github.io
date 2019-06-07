@@ -1,12 +1,23 @@
-$(".background > div:gt(0)").hide();
+$(".background-wide > div:gt(0)").hide();
 
 setInterval(function() { 
-  $('.background > div:first')
+  $('.background-wide > div:first')
     .fadeOut(1000)
     .next()
     .fadeIn(1000)
     .end()
-    .appendTo('.background');
+    .appendTo('.background-wide');
+},  3000);
+
+$(".background-mobi > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('.background-mobi > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('.background-mobi');
 },  3000);
 
 function about() {
