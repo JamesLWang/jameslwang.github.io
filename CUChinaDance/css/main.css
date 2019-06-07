@@ -114,7 +114,7 @@ html, body {
 iframe{
 	display: block;
 	border-width: 0px;
-	padding: 20px;
+	padding: 10px;
 	width:100%;
 	align-content: center;
 }
