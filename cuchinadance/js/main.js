@@ -22,7 +22,8 @@ setInterval(function() {
 
 function about() {
   var x = document.getElementById("information");
-  if (x.style.display === "none") {
+  console.log(x)
+  if (x.style.display != "block") {
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
     }
@@ -45,7 +46,7 @@ function about() {
 
 function team() {
   var x = document.getElementById("team");
-  if (x.style.display === "none") {
+  if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
     }
@@ -66,7 +67,7 @@ function team() {
 
   function calendar() {
   var x = document.getElementById("calendar");
-  if (x.style.display === "none") {
+  if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
     }
@@ -88,7 +89,7 @@ function team() {
 
   function contact() {
   var x = document.getElementById("contact");
-  if (x.style.display === "none") {
+  if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
     }
