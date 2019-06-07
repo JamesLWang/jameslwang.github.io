@@ -112,11 +112,11 @@ html, body {
 }
 
 iframe{
-  margin-left: 5%;
+  margin-left: 10%;
   display: block;
   border-width: 0px;
   padding: 5px;
-  width:90%;
+  width:80%;
   align-content: center;
 }
 
