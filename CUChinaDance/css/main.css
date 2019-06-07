@@ -112,17 +112,18 @@ html, body {
 }
 
 iframe{
-	display: block;
-	border-width: 0px;
-	padding: 10px;
-	width:100%;
-	align-content: center;
+  margin-left: 5%;
+  display: block;
+  border-width: 0px;
+  padding: 5px;
+  width:90%;
+  align-content: center;
 }
 
 @media (min-width: 992px) { 
 
 .background-mobi{
-	display: none;
+  display: none;
 }
 
  .background-wide{
@@ -151,7 +152,7 @@ iframe{
   }
 
   .background-wide{
-	display: none;
+  display: none;
 }
 }
 
