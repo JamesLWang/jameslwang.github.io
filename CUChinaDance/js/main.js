@@ -117,3 +117,7 @@ function team() {
     $('.popupCloseButton').click(function(){
         $('.hover_bkgr_fricc').hide();
     });
+
+    $(document).ready(function() {
+    $("#information").delay(2000).fadeIn(500);
+});
