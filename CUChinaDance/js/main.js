@@ -119,5 +119,5 @@ function team() {
     });
 
 $(document).ready(function() {
-    $("#information").delay(2000).fadeIn(500);
+    $("#information").delay(4000).fadeIn(500);
 });
