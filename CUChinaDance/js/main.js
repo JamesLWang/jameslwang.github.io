@@ -118,9 +118,6 @@ function team() {
         $('.hover_bkgr_fricc').hide();
     });
 
-
-$(function(){
-   setTimeout(function(){
-     $('#information').show();
-   },5000);
+$(document).ready(function() {
+    $("#information").delay(2000).fadeIn(500);
 });
