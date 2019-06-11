@@ -151,12 +151,13 @@ iframe {
  height: 100%;
 }
 
+br .desc{
+  line-height: 1.7em;
+}
 
 @media (min-width: 992px) { 
-
 .background-mobi{
 	display: none;
-
 }
 
  .background-wide{
@@ -192,6 +193,8 @@ iframe {
 
 
 @media(min-width: 992px){
+
+ 
 #information{
   display: none;
   top: 5%;
@@ -281,7 +284,30 @@ iframe {
 
 }
 
+.teamName{
+  font-size: 1.3em;
+  line-height: 0.9em;
+}
+
+@media(min-width: 1338px){
+   #normal{
+    display: block;
+  }
+  #mobi{
+    display: none;
+  }
+}
+@media(max-width: 1338px){
+      #normal{
+    display: none;
+  }
+  #mobi{
+    display: block;
+  }
+}
+
 @media (max-width: 992px) { 
+
   #information{
   display: none;
   top: 8%;
@@ -355,6 +381,56 @@ iframe {
 }
 
 
+.col-4{
+
+    margin: auto;  /* Magic! */
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-width: 300px !important;
+
+}
+
+
+.quotes{
+  font-style: italic;
+  font-color: gray;
+  quotes: "\201C""\201D""\2018""\2019";
+  line-height: 1.9em;
+}
+
+.quotes::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #999;
+
+  position: relative;
+  left: 3px;
+  top:5px;
+
+}
+
+.quotes::after{
+  /*Reset to make sure*/
+  content: "\201D";
+
+   /*Font*/
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #999;
+
+    position: relative;
+
+}
+
+
+
 
 #logos{
   display: inline;
@@ -367,6 +443,32 @@ iframe {
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.headshot-mobi{
+  margin: auto;  /* Magic! */
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 60%;
+
+}
+.headshot-mobi img{
+  margin: auto;  /* Magic! */
+  vertical-align: middle;
+  max-height: 65% !important;
+  height: auto;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 10px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+.row-mobi{
+  padding: 15px;
 }
 
 .pic-align{

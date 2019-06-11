@@ -108,6 +108,24 @@ function team() {
   }
   }
 
+  function slideshow(){
+    if(document.getElementById("information").style.display =="block"){
+      document.getElementById("information").style.display="none"
+    }
+    if(document.getElementById("team").style.display =="block"){
+      document.getElementById("team").style.display="none"
+    }
+     if(document.getElementById("calendar").style.display =="block"){
+      document.getElementById("calendar").style.display="none"
+    }
+    if(document.getElementById("gallery").style.display =="block"){
+      document.getElementById("gallery").style.display="none"
+    }
+    if(document.getElementById("contact").style.display =="block"){
+      document.getElementById("contact").style.display="none"
+    }
+  }
+
  $(".trigger_popup_fricc").click(function(){
        $('.hover_bkgr_fricc').show();
     });
@@ -118,6 +136,13 @@ function team() {
         $('.hover_bkgr_fricc').hide();
     });
 
-$(document).ready(function() {
-    $("#information").delay(4000).fadeIn(500);
-});
+// $(document).ready(function() {
+//   setTimeout(function() { 
+//     if(document.getElementById("information").style.display=="" && document.getElementById("team").style.display=="" && document.getElementById("calendar").style.display =="" &&
+//      document.getElementById("gallery").style.display =="" && document.getElementById("contact").style.display ==""){
+//     $("#information").delay(1000).fadeIn(500);}
+//     }
+//   }
+//     , 3600);
+  
+
