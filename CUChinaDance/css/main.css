@@ -117,6 +117,12 @@ html, body {
   margin:0 auto;
 }
 
+.bar_gallery{
+  width:130px;
+  border-bottom: 3px solid black;
+  margin:0 auto;
+}
+
 /*
 iframe{
 	margin-left: 5%;
@@ -253,7 +259,7 @@ br .desc{
   margin-left: 27.5%;
   max-height: 95%;
   width: 68%;
-  opacity: 0.80;
+  opacity: 0.95;
   background-color: white;
   overflow-wrap: break-word;
   padding:10px;
@@ -621,3 +627,45 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 /* Popup box BEGIN */
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.img-fluid{
+  padding: 5px;
+}

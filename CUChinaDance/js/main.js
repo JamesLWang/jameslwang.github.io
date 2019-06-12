@@ -86,6 +86,28 @@ function team() {
   }
   }
 
+    function gallery() {
+  var x = document.getElementById("gallery");
+  if (x.style.display != "block") {
+    if(document.getElementById("information").style.display =="block"){
+      document.getElementById("information").style.display="none"
+    }
+    if(document.getElementById("team").style.display =="block"){
+      document.getElementById("team").style.display="none"
+    }
+     if(document.getElementById("calendar").style.display =="block"){
+      document.getElementById("calendar").style.display="none"
+    }
+    if(document.getElementById("contact").style.display =="block"){
+      document.getElementById("contact").style.display="none"
+    }
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  }
+
+
 
   function contact() {
   var x = document.getElementById("contact");
@@ -145,4 +167,16 @@ function team() {
 //   }
 //     , 3600);
   
-
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
