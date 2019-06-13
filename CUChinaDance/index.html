@@ -1,491 +1,837 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="CU China Dance">
-  <meta name="author" content="James Wang">
-  <link rel="icon" type="image/png" href="assets/favicon.ico">
-  <title>CU China Dance</title>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CU China Dance">
+    <meta name="author" content="James Wang">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <title>CU China Dance</title>
     <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/ekko-lightbox.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
-
-<body>
-
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="javaScript: slideshow()">
-        <span class="d-block d-lg-none">CU China Dance</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/logo.jpg" alt="">
-        </span>
+      <span class="d-block d-lg-none">CU China Dance</span>
+      <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/logo.jpg" alt="">
+      </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="javascript: about()">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="javascript: team()">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="javaScript: calendar()">Calendar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="javaScript: gallery()">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="javaScript: contact()">Contact Us</a>
-        </li>
-        <div id="logos">
-        <li class="nav-item">
-          <a href="https://www.facebook.com/ColumbiaChinaDance/"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/cuchinadance/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCDBTCQEIVE6HYAxIGkeBJVw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-
-            <a class="trigger_popup_fricc"><i class="fab fa-weixin"></i> </a>
-
-<div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">X</div>
-        <p>微信公众号：CUChinaDance</p>
-    </div>
-</div>
-
-        </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javascript: about()">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javascript: team()">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javaScript: calendar()">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javaScript: gallery()">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="javaScript: contact()">Contact Us</a>
+          </li>
+          <div id="logos">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/ColumbiaChinaDance/"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/cuchinadance/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCDBTCQEIVE6HYAxIGkeBJVw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+              <a class="trigger_popup_fricc"><i class="fab fa-weixin"></i> </a>
+              <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                  <div class="popupCloseButton">X</div>
+                  <p>微信公众号：CUChinaDance</p>
+                </div>
+              </div>
+            </li>
+          </div>
       </div>
-        </div>
-          
-        </div>
+      </div>
       </ul>
-      
-
       </div>
-
     </nav>
-
     <!--PICTURES NEED TO BE CROPPED-->
     <div class="background-wide">
-    	<div >
-    		<img src="assets/cover_sample.jpg">
-    	</div>
-    	<div >
-    		<img src="assets/cover_sample_2.jpg">
-    	</div>
-    	<div class>
-    		<img src="assets/cover_sample_3.jpg">
-    	</div>
+      <div >
+        <img src="assets/Horiz_1.jpg">
+      </div>
+      <div >
+        <img src="assets/Horiz_2.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_3.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_4.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_5.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_6.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_7.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_8.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_9.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_10.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_11.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_12.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_13.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_14.jpg">
+      </div>
+      <div class>
+        <img src="assets/Horiz_15.jpg">
+      </div>
     </div>
-
     <!--PICTURES NEED TO BE RECHOSEN AND LONGER!-->
     <div class="background-mobi">
       <div>
-        <img src="assets/cover_vert_1.jpg">
+        <img src="assets/Vert_1.jpg">
       </div>
       <div>
-      <img src="assets/cover_vert_2.jpg">
-      </div> 
+        <img src="assets/Vert_2.jpg">
+      </div>
       <div>
-      <img src="assets/cover_vert_3.jpg">
-      </div> 
-
+        <img src="assets/Vert_3.jpg">
+      </div>
+      <div>
+        <img src="assets/Vert_4.jpg">
+      </div>
+      <div>
+        <img src="assets/Vert_5.jpg">
+      </div>
+      <div>
+        <img src="assets/Vert_6.jpg">
+      </div>
     </div>
-
     <div id="information">
-    <center><h1>About Us</h1></center>
-    <div class="bar_about"></div>
-    <br>
-    <div class="content">
-      Founded in 2013, CU China Dance is the only dance group at Columbia University that focuses on traditional Chinese dance from around the country. Each year, the club performs a number of shows at prominent cultural events, such as Night Market, Lunar Gala, and the CU TASA Philanthropy banquet. The club holds practices and/or open workshops every Sunday and puts on an annual showcase towards the end of the year. CU China Dance hopes to share the beauty and diversity of  Chinese culture with the community around it.
+      <center>
+        <h1>About Us</h1>
+      </center>
+      <div class="bar_about"></div>
       <br>
-      <br>
-      哥伦比亚大学舞韵社团（COLUMBIA CHINA DANCE）初次成立于2013年9月，2017年被正式认可为哥伦比亚大学的官方社团，是目前哥大校园内唯一的官方中国舞社团。
-      <br>
-      <br>
-      舞韵自创办以来，吸引了众多对于中国传统和舞蹈文化感兴趣的同学，主要以WEEKLY WORKSHOP和表演的形式将中国民族舞和古典舞在哥大校园以及纽约地区内推广。舞韵曾数次在 COLUMBIA UNIVERSITY NIGHT MARKET, CU TASA PHILANTHROPHY BANQUET, 哥伦比亚大学春晚，林肯中心高校联合春晚等大型活动的舞台上呈现高质量的精彩演出。2019年3月，在80余位演职人员的努力下，舞韵举办了自成立以来的第一届SHOWCASE - “镜花水月”主题的年度演出，不仅在演出当天座无虚席，还收到了纽约各界的广泛关注与好评。之后还受到多家媒体采访，包括人民网海外的两次报道。
-      <br>
-      <br>
-      舞韵的社员以优美的舞姿和气韵演绎出了中国舞蹈的刚柔并济之美，成功地将中华民族的传统文化与底蕴以表演艺术的形式展现给了海内外观众，赢得了广泛的赞誉。舞韵不仅是哥大春晚舞蹈类节目表演的主力，还是哥大全球中心-北京高度认可的社团。
-      <br>
-      <br>
-      除了演出任务，舞韵也是一个注重于多方面发展的艺术平台：舞团在每周日都会举办例行Open Workshop，报名即可参加（不仅限于表演队成员），旨在邀请更多感兴趣的同学体验舞蹈培训的魅力，同时也了解舞韵的点点滴滴。希望成员们可以通过舞蹈陶冶情操，以舞会友，怀揣着饱满的热情善于发现生活中的美。
-      <br>
-      <br>
-      舞韵每年秋季通过audition招募新表演队成员，通常每年有近30位成员，承接各类演出。
-      <br>
-      <br>
-      期待热爱舞蹈和传统文化的你加入舞韵大家庭！
-
+      <div class="content">
+        Founded in 2013, CU China Dance is the only dance group at Columbia University that focuses on traditional Chinese dance from around the country. Each year, the club performs a number of shows at prominent cultural events, such as Night Market, Lunar Gala, and the CU TASA Philanthropy banquet. The club holds practices and/or open workshops every Sunday and puts on an annual showcase towards the end of the year. CU China Dance hopes to share the beauty and diversity of  Chinese culture with the community around it.
+        <br>
+        <br>
+        哥伦比亚大学舞韵社团（COLUMBIA CHINA DANCE）初次成立于2013年9月，2017年被正式认可为哥伦比亚大学的官方社团，是目前哥大校园内唯一的官方中国舞社团。
+        <br>
+        <br>
+        舞韵自创办以来，吸引了众多对于中国传统和舞蹈文化感兴趣的同学，主要以WEEKLY WORKSHOP和表演的形式将中国民族舞和古典舞在哥大校园以及纽约地区内推广。舞韵曾数次在 COLUMBIA UNIVERSITY NIGHT MARKET, CU TASA PHILANTHROPHY BANQUET, 哥伦比亚大学春晚，林肯中心高校联合春晚等大型活动的舞台上呈现高质量的精彩演出。2019年3月，在80余位演职人员的努力下，舞韵举办了自成立以来的第一届SHOWCASE - “镜花水月”主题的年度演出，不仅在演出当天座无虚席，还收到了纽约各界的广泛关注与好评。之后还受到多家媒体采访，包括人民网海外的两次报道。
+        <br>
+        <br>
+        舞韵的社员以优美的舞姿和气韵演绎出了中国舞蹈的刚柔并济之美，成功地将中华民族的传统文化与底蕴以表演艺术的形式展现给了海内外观众，赢得了广泛的赞誉。舞韵不仅是哥大春晚舞蹈类节目表演的主力，还是哥大全球中心-北京高度认可的社团。
+        <br>
+        <br>
+        除了演出任务，舞韵也是一个注重于多方面发展的艺术平台：舞团在每周日都会举办例行Open Workshop，报名即可参加（不仅限于表演队成员），旨在邀请更多感兴趣的同学体验舞蹈培训的魅力，同时也了解舞韵的点点滴滴。希望成员们可以通过舞蹈陶冶情操，以舞会友，怀揣着饱满的热情善于发现生活中的美。
+        <br>
+        <br>
+        舞韵每年秋季通过audition招募新表演队成员，通常每年有近30位成员，承接各类演出。
+        <br>
+        <br>
+        期待热爱舞蹈和传统文化的你加入舞韵大家庭！
+      </div>
     </div>
-    </div>
-
     <!--for normal display ONLY-->
     <div id="team">
       <div id="mobi">
-        <center><h1>Team</h1></center>
-         <div class="bar_team"></div>
-          
-          <div class="row-mobi">
-            <b><div class="teamName" style="text-align: left">Nikita Tang - President</div></b>
+        <center>
+          <h1>Team</h1>
+        </center>
+        <div class="bar_team"></div>
+        <div class="row-mobi">
+          <b>
+            <div class="teamName" style="text-align: left">Nikita Tang - President</div>
+          </b>
           <i style="line-height:0.9em; text-align: left;">SEAS 2022, Financial Engineering Major and Computer Science Minor</i>
           <br>
-            <div class="headshot-mobi">
+          <div class="headshot-mobi">
             <img src="assets/Nikita.jpg">
-            </div>
           </div>
-
-          <div class="row-mobi" style="text-align: left">
+        </div>
+        <div class="row-mobi" style="text-align: left">
           • Nikita has been with CU China Dance since Fall of 2018
           <br class="desc">
           • Nikita practiced rhythmic gymnastics competitively for 10+ years and was a US National Elite Team Member. She started Chinese dance at age 16 and performed at many festivals, senior centers, and schools as well as won champion at national and international competitions.
           <br class="desc">
           <br class="desc">
           <div class="quotes">
-          Dance offers me something more than just the technical challenge found in rhythmic gymnastics; it includes an emotional and spiritual aspect that allows me to really feel myself and immerse myself into my surroundings. The way I feel when the music comes on and my body takes over is amazing and allows me to experience freedom from the stress and work of my daily life. Dance is more than just a hobby to me, it is a world where I feel belonged, a family where unbreakable bonds are created. Come join CU China Dance’s family!!!
-        </div>
-
+            Dance offers me something more than just the technical challenge found in rhythmic gymnastics; it includes an emotional and spiritual aspect that allows me to really feel myself and immerse myself into my surroundings. The way I feel when the music comes on and my body takes over is amazing and allows me to experience freedom from the stress and work of my daily life. Dance is more than just a hobby to me, it is a world where I feel belonged, a family where unbreakable bonds are created. Come join CU China Dance’s family!!!
           </div>
-
-          <div class="row-mobi">
-             <b><div class="teamName" style="text-align: left">Asteria Liu - Vice President and Publicity Chair</div></b>
+        </div>
+        <div class="row-mobi">
+          <b>
+            <div class="teamName" style="text-align: left">Asteria Liu - Vice President and Publicity Chair</div>
+          </b>
           <i style="line-height:0.9em; text-align: left">Class of 2022, Comparative Literature & Film Studies</i>
           <br>
-            <div class="headshot-mobi ">
+          <div class="headshot-mobi ">
             <img src="assets/Asteria.jpg">
-            </div>
           </div>
-
-          <div class="row-mobi" style="text-align: left">
+        </div>
+        <div class="row-mobi" style="text-align: left">
           • Asteria has been with CU China Dance since Fall of 2018
           <br class="desc">
           • Asteria practiced 6 years of Chinese Folk Dance, 5 years of Classical Ballet
           <br class="desc">
           <br class="desc">
           <div class="quotes">
-          Dancing is part of my life. It speaks out the unique beauty to the public through its variously artistic expressions and aesthetic appreciation. To me, dancing truly helps establish a wonderful balance between work and leisure. My time at CU China Dance not only enriches my college experience but also makes it possible for me to discover more people who share the same interest as I do.
-        </div>
+            Dancing is part of my life. It speaks out the unique beauty to the public through its variously artistic expressions and aesthetic appreciation. To me, dancing truly helps establish a wonderful balance between work and leisure. My time at CU China Dance not only enriches my college experience but also makes it possible for me to discover more people who share the same interest as I do.
           </div>
-
-          <div class="row-mobi">
-            <b><div class="teamName" style="text-align: left">Amber Zhao - Publicity Chair, Secretary</div></b>
+        </div>
+        <div class="row-mobi">
+          <b>
+            <div class="teamName" style="text-align: left">Amber Zhao - Publicity Chair, Secretary</div>
+          </b>
           <i style="line-height:0.9em; text-align: left;">SEAS 2021, Earth and Environmental Engineering, Premed</i>
           <br>
-            <div class="headshot-mobi ">
+          <div class="headshot-mobi ">
             <img src="assets/Amber.jpg">
-            </div>
           </div>
-
-          <div class="row-mobi" style="text-align: left">
+        </div>
+        <div class="row-mobi" style="text-align: left">
           • Amber has been with CU China Dance since Spring 2019
           <br class="desc">
           • Amber practiced Chinese dance from age 4-16 with a number of dance theaters, and started dancing again at 20. 
           <br class="desc">
           <br class="desc">
           <div class="quotes">
-          I always enjoyed Chinese Dance as a kid because it allowed me to connect with other kids my age who I shared a similar background with—something that was rare for me at the time. Now, I enjoy dancing because it allows me to connect with my culture and heritage, as well as share the beauty of Chinese culture with my community.
+            I always enjoyed Chinese Dance as a kid because it allowed me to connect with other kids my age who I shared a similar background with—something that was rare for me at the time. Now, I enjoy dancing because it allows me to connect with my culture and heritage, as well as share the beauty of Chinese culture with my community.
+          </div>
         </div>
-
-          </div>
-
-          <div class="row-mobi" >
-            <b><div class="teamName" style="text-align: left">Olivia Gong - Treasurer</div></b>
+        <div class="row-mobi" >
+          <b>
+            <div class="teamName" style="text-align: left">Olivia Gong - Treasurer</div>
+          </b>
           <i style="line-height:0.9em; text-align: left">Barnard 2022, Economics and Math, Chemistry (Minor)</i>
-
-            <div class="headshot-mobi ">
+          <div class="headshot-mobi ">
             <img src="assets/Olivia.jpg">
-            </div>
-
           </div>
-
-          <div class="row-mobi">
+        </div>
+        <div class="row-mobi">
           • Olivia has been with CU China Dance since the Fall of 2018
           <br class="desc"> 
           • Olivia has been dancing since the age of 3 and over the years she has learned a variety of styles including Ballet, Jazz, Lyrical, Tap, and Chinese Dance.
           <br class="desc">
           <br class="desc">
           <div class="quotes">
-          I started dancing at a very young age and I was giving multiple opportunities to stop dancing throughout my childhood, but for some reason I always would return to it. Dance has always been there and I have made some of my longest lasting friendships through dancing. Dance has definitely become more than just movement or expression, it is a lifestyle that I have come to know, love, and miss—especially since starting college I have not been able to dance as much as I used to. Through Chinese dance I have been able to further embrace and learn about my cultural heritage as well as spread the beauty of Asian art within the community.
-        </div>
-
-          </div>
-
-
-         <br>
-
-
-      </div>
-
-
-      <div id="normal">
-    <center><h1>Team</h1></center>
-    <div class="bar_team"></div>
-    <br>
-
-     <div class="row">
-        <div class="col-4">
-          <div class="headshot pic-align">
-            <img src="assets/Nikita.jpg">
+            I started dancing at a very young age and I was giving multiple opportunities to stop dancing throughout my childhood, but for some reason I always would return to it. Dance has always been there and I have made some of my longest lasting friendships through dancing. Dance has definitely become more than just movement or expression, it is a lifestyle that I have come to know, love, and miss—especially since starting college I have not been able to dance as much as I used to. Through Chinese dance I have been able to further embrace and learn about my cultural heritage as well as spread the beauty of Asian art within the community.
           </div>
         </div>
-
-        <div class="col-8"><b><div class="teamName">Nikita Tang - President</div></b>
-          <i style="line-height:0.9em">SEAS 2022, Financial Engineering Major and Computer Science Minor</i>
-          <br>
-          <br>
-          Nikita has been with CU China Dance since Fall of 2018
-          <br>
-          <br>
-          Nikita practiced rhythmic gymnastics competitively for 10+ years and was a US National Elite Team Member. She started Chinese dance at age 16 and performed at many festivals, senior centers, and schools as well as won champion at national and international competitions.
-          <br>
-          <br>
-          <div class="quotes">
-          Dance offers me something more than just the technical challenge found in rhythmic gymnastics; it includes an emotional and spiritual aspect that allows me to really feel myself and immerse myself into my surroundings. The way I feel when the music comes on and my body takes over is amazing and allows me to experience freedom from the stress and work of my daily life. Dance is more than just a hobby to me, it is a world where I feel belonged, a family where unbreakable bonds are created. Come join CU China Dance’s family!!!
-        </div>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-
-       <div class="row">
-        <div class="col-8"><b><div class="teamName">Asteria Liu - Vice President and Publicity Chair</div></b>
-          <i style="line-height:0.9em">Class of 2022, Comparative Literature & Film Studies</i>
-          <br>
-          <br>
-          Asteria has been with CU China Dance since Fall of 2018
-          <br>
-          <br>
-          Asteria practiced 6 years of Chinese Folk Dance, 5 years of Classical Ballet
-          <br>
-          <br>
-          <div class="quotes">
-          Dancing is part of my life. It speaks out the unique beauty to the public through its variously artistic expressions and aesthetic appreciation. To me, dancing truly helps establish a wonderful balance between work and leisure. My time at CU China Dance not only enriches my college experience but also makes it possible for me to discover more people who share the same interest as I do.
-        </div>
-        </div>
-        <div class="col-4">
-          <div class="headshot">
-            <img src="assets/Asteria.jpg">
-          </div>
-        </div>
-
         <br>
       </div>
-
-      <br>
-      <br>
-
-      <div class="row">
-        <div class="col-4">
-          <div class="headshot">
-            <img src="assets/Amber.jpg">
+      <div id="normal">
+        <center>
+          <h1>Team</h1>
+        </center>
+        <div class="bar_team"></div>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <div class="headshot pic-align">
+              <img src="assets/Nikita.jpg">
+            </div>
+          </div>
+          <div class="col-8">
+            <b>
+              <div class="teamName">Nikita Tang - President</div>
+            </b>
+            <i style="line-height:0.9em">SEAS 2022, Financial Engineering Major and Computer Science Minor</i>
+            <br>
+            <br>
+            Nikita has been with CU China Dance since Fall of 2018
+            <br>
+            <br>
+            Nikita practiced rhythmic gymnastics competitively for 10+ years and was a US National Elite Team Member. She started Chinese dance at age 16 and performed at many festivals, senior centers, and schools as well as won champion at national and international competitions.
+            <br>
+            <br>
+            <div class="quotes">
+              Dance offers me something more than just the technical challenge found in rhythmic gymnastics; it includes an emotional and spiritual aspect that allows me to really feel myself and immerse myself into my surroundings. The way I feel when the music comes on and my body takes over is amazing and allows me to experience freedom from the stress and work of my daily life. Dance is more than just a hobby to me, it is a world where I feel belonged, a family where unbreakable bonds are created. Come join CU China Dance’s family!!!
+            </div>
           </div>
         </div>
-        <div class="col-8"><b><div class="teamName">Amber Zhao - Publicity Chair, Secretary</div></b>
-          <i style="line-height:0.9em">SEAS 2021, Earth and Environmental Engineering, Premed</i>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-8">
+            <b>
+              <div class="teamName">Asteria Liu - Vice President and Publicity Chair</div>
+            </b>
+            <i style="line-height:0.9em">Class of 2022, Comparative Literature & Film Studies</i>
+            <br>
+            <br>
+            Asteria has been with CU China Dance since Fall of 2018
+            <br>
+            <br>
+            Asteria practiced 6 years of Chinese Folk Dance, 5 years of Classical Ballet
+            <br>
+            <br>
+            <div class="quotes">
+              Dancing is part of my life. It speaks out the unique beauty to the public through its variously artistic expressions and aesthetic appreciation. To me, dancing truly helps establish a wonderful balance between work and leisure. My time at CU China Dance not only enriches my college experience but also makes it possible for me to discover more people who share the same interest as I do.
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="headshot">
+              <img src="assets/Asteria.jpg">
+            </div>
+          </div>
           <br>
-          <br>
-          Amber has been with CU China Dance since Spring 2019
-          <br>
-          <br>
-          Amber practiced Chinese dance from age 4-16 with a number of dance theaters, and started dancing again at 20. 
-          <br>
-          <br>
-          <div class="quotes">
-          I always enjoyed Chinese Dance as a kid because it allowed me to connect with other kids my age who I shared a similar background with—something that was rare for me at the time. Now, I enjoy dancing because it allows me to connect with my culture and heritage, as well as share the beauty of Chinese culture with my community.
         </div>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-
-             <div class="row">
-        <div class="col-8"><b><div class="teamName">Olivia Gong - Treasurer</div></b>
-          <i style="line-height:0.9em">Barnard 2022, Economics and Math, Chemistry (Minor)</i>
-          <br>
-          <br>
-          Olivia has been with CU China Dance since the Fall of 2018
-          <br>
-          <br>
-          Olivia has been dancing since the age of 3 and over the years she has learned a variety of styles including Ballet, Jazz, Lyrical, Tap, and Chinese Dance.
-          <br>
-          <br>
-          <div class="quotes">
-          I started dancing at a very young age and I was giving multiple opportunities to stop dancing throughout my childhood, but for some reason I always would return to it. Dance has always been there and I have made some of my longest lasting friendships through dancing. Dance has definitely become more than just movement or expression, it is a lifestyle that I have come to know, love, and miss—especially since starting college I have not been able to dance as much as I used to. Through Chinese dance I have been able to further embrace and learn about my cultural heritage as well as spread the beauty of Asian art within the community.
-        </div>
-      </div>
-
-         <div class="col-4">
-          <div class="headshot">
-            <img src="assets/Olivia.jpg">
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <div class="headshot">
+              <img src="assets/Amber.jpg">
+            </div>
+          </div>
+          <div class="col-8">
+            <b>
+              <div class="teamName">Amber Zhao - Publicity Chair, Secretary</div>
+            </b>
+            <i style="line-height:0.9em">SEAS 2021, Earth and Environmental Engineering, Premed</i>
+            <br>
+            <br>
+            Amber has been with CU China Dance since Spring 2019
+            <br>
+            <br>
+            Amber practiced Chinese dance from age 4-16 with a number of dance theaters, and started dancing again at 20. 
+            <br>
+            <br>
+            <div class="quotes">
+              I always enjoyed Chinese Dance as a kid because it allowed me to connect with other kids my age who I shared a similar background with—something that was rare for me at the time. Now, I enjoy dancing because it allows me to connect with my culture and heritage, as well as share the beauty of Chinese culture with my community.
+            </div>
           </div>
         </div>
-
-
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-8">
+            <b>
+              <div class="teamName">Olivia Gong - Treasurer</div>
+            </b>
+            <i style="line-height:0.9em">Barnard 2022, Economics and Math, Chemistry (Minor)</i>
+            <br>
+            <br>
+            Olivia has been with CU China Dance since the Fall of 2018
+            <br>
+            <br>
+            Olivia has been dancing since the age of 3 and over the years she has learned a variety of styles including Ballet, Jazz, Lyrical, Tap, and Chinese Dance.
+            <br>
+            <br>
+            <div class="quotes">
+              I started dancing at a very young age and I was giving multiple opportunities to stop dancing throughout my childhood, but for some reason I always would return to it. Dance has always been there and I have made some of my longest lasting friendships through dancing. Dance has definitely become more than just movement or expression, it is a lifestyle that I have come to know, love, and miss—especially since starting college I have not been able to dance as much as I used to. Through Chinese dance I have been able to further embrace and learn about my cultural heritage as well as spread the beauty of Asian art within the community.
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="headshot">
+              <img src="assets/Olivia.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    </div>
-
-    </div>
-
     <div id="calendar" style="align-items:center">
-      <center><h1>Calendar</h1></center>
+      <center>
+        <h1>Calendar</h1>
+      </center>
       <div class="bar_calendar"></div>
       <br>
-
       <iframe  src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043" style="border-width:0" height="85%"  scrolling="no"></iframe>
     </div>
-
-
-
     <div id="gallery">
-      <center><h1>Gallery</h1></center>
+      <center>
+        <h1>Gallery</h1>
+      </center>
       <div class="bar_gallery"></div>
       <br>
-      <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Event1')">Event 1</button>
-  <button class="tablinks" onclick="openCity(event, 'Event2')">Event 2</button>
-  <button class="tablinks" onclick="openCity(event, 'Event3')">Event 3</button>
-</div>
-
-<div id="Event1" class= "tabcontent">
-        <h3>Event 1</h3>
-        <div class="row justify-content-center">
-    <div class="col-md-12">
-        <div class="row">
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-            </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-            </a>
-            
+      <!--
+        <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Event1')">Event 1</button>
+        <button class="tablinks" onclick="openCity(event, 'Event2')">Event 2</button>
+        <button class="tablinks" onclick="openCity(event, 'Event3')">Event 3</button>
         </div>
+        -->
+      <div data-tabs>
+        <div>2018-2019</div>
+        <div>2017-2018</div>
+        <div>2016-2017</div>
+      </div>
+      <div data-panes>
+        <div>
+          <div data-tabs>
+            <div>Showcase 《镜花水月》</div>
+            <div>Event 2</div>
+            <div>Event 3</div>
+            <div>Event 4</div>
+            <div>Event 5</div>
+            <div>Event 6</div>
+          </div>
+          <div data-panes>
+            <div>
+              <h3>Event 1</h3>
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="row">
+                    <a href="assets/2018-19/showcase/1.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/1.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/2.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/2.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/3.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/3.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/4.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/4.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/5.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/5.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/6.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/6.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/7.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/7.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/8.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/8.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/9.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/9.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/10.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/10.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/11.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/11.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/12.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/12.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/13.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/13.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/14.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/14.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/15.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/15.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/16.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/16.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/17.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/17.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/18.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/18.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/19.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/19.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/20.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/20.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/21.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/21.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/22.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/22.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/23.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/23.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/24.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/24.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/25.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/25.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/26.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/26.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/27.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/27.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/28.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/28.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/29.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/29.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/30.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/30.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/31.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/31.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/32.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/32.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/33.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/33.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/34.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/34.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/35.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/35.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/36.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/36.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/37.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/37.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/38.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/38.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/39.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/39.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/40.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/40.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/41.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/41.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/42.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/42.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/43.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/43.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/44.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/44.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/45.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/45.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/46.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/46.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/47.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/47.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/48.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/48.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/49.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/49.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/50.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/50.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/51.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/51.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/52.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/52.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/53.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/53.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/54.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/54.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/55.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/55.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/56.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/56.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/57.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/57.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/58.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/58.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/59.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/59.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/60.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/60.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/61.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/61.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/62.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/62.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/63.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/63.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/64.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/64.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/65.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/65.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/66.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/66.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/67.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/67.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/68.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/68.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/69.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/69.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/70.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/70.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/71.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/71.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/72.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/72.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/73.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/73.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/74.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/74.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/75.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/75.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/76.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/76.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/77.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/78.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/78.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/78.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/79.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/79.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/80.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/80.JPG" class="img-fluid">
+                    </a>
+
+                    <a href="assets/2018-19/showcase/81.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/81.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/82.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/82.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/83.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/83.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2018-19/showcase/84.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2018-19/showcase/84.JPG" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>Event 2 2018-2019</div>
+            <div>Event 3 2018-2019</div>
+            <div>Event 4 2018-2019</div>
+            <div>Event 5 2018-2019</div>
+            <div>Event 6 2018-2019</div>
+            <div>Event 7 2018-2019</div>
+            <div>Event 8 2018-2019</div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="row">
+                    <a href="assets/2017-18/2.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/2.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/3.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/3.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/4.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/4.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/5.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/5.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/6.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/6.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/7.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/7.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/8.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/8.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/9.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/9.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/10.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/10.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/11.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/11.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/12.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/12.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2017-18/13.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2017-18/13.JPG" class="img-fluid">
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="row">
+                    <a href="assets/2016-17/1.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/1.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/2.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/2.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/3.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/3.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/4.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/4.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/5.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/5.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/6.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/6.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/7.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/7.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/8.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/8.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/9.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/9.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/10.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/10.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/11.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/11.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/12.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/12.JPG" class="img-fluid">
+                    </a>
+                    <a href="assets/2016-17/13.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <img src="assets/2016-17/13.JPG" class="img-fluid">
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-      </div>
-
-      <div id="Event2" class="tabcontent">
-        <h3>Event 2</h3>
-        <
-      </div>
-
-      <div id="Event3" class="tabcontent">
-        <h3>Event 3</h3>
-        
-      </div>
-
-
-      </div>
-
-      
-  
-
+    <div id="Event2" class="tabcontent">
+      <h3>Event 2</h3>
+      <
+    </div>
+    <div id="Event3" class="tabcontent">
+      <h3>Event 3</h3>
+    </div>
+    </div>
     <div id="contact">
-      <center><h1>Contact Us</h1></center>
+      <center>
+        <h1>Contact Us</h1>
+      </center>
       <div class="bar_calendar"></div>
       <br>
       Send us an email at <a href="mailto: cuchinadance@gmail.com">cuchinadance@gmail.com</a> or fill out the following form:
       <br>
       <br>
       <form action="https://formspree.io/jameswang1279@gmail.com" method="POST" />
-      <label for="fname">Name</label>
-      <input type="text" id="fname" name="Name">
-      
-      <label for="email">Email</label>
-      <input type="text" id="email" name="Email"> 
-
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="Subject"> 
-
-      <label for="body">Body</label>
-      <textarea id="text" name="body" style="height:100px"></textarea>
-
-      <input type="submit" value="Submit">
-
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="Name">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="Email"> 
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="Subject"> 
+        <label for="body">Body</label>
+        <textarea id="text" name="body" style="height:100px"></textarea>
+        <input type="submit" value="Submit">
       </form>
-
-
-
-    </div> 
-
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/ekko-lightbox.js"></script>
-
+    <script src="js/tabbis.js"></script>
+    <script>
+      var tabs = tabbis.init({
+      tabGroup: '[data-tabs]',
+      paneGroup: '[data-panes]',
+      tabActive: 'active',
+      paneActive: 'active',
+      callback: function(tab, pane) {
+      console.log(tab);
+      console.log(pane);
+      }
+      });
+    </script>
     <script>
       $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
-          </script>
-
-</body>
+          
+    </script>
+  </body>
 </html>
