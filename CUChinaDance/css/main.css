@@ -676,6 +676,7 @@ input[type=submit]:hover {
  background: #eee;
  padding: 10px;
  border: 2px solid #ccc;
+ overflow-x: scroll;
 }
 
 [data-tabs] >* {
