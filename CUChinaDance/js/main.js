@@ -1,24 +1,24 @@
-$(".background-wide > div:gt(0)").hide();
+// $(".background-wide > div:gt(0)").hide();
 
-setInterval(function() { 
-  $('.background-wide > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('.background-wide');
-},  3000);
+// setInterval(function() { 
+//   $('.background-wide > div:first')
+//     .fadeOut(1000)
+//     .next()
+//     .fadeIn(1000)
+//     .end()
+//     .appendTo('.background-wide');
+// },  3000);
 
-$(".background-mobi > div:gt(0)").hide();
+// $(".background-mobi > div:gt(0)").hide();
 
-setInterval(function() { 
-  $('.background-mobi > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('.background-mobi');
-},  3000);
+// setInterval(function() { 
+//   $('.background-mobi > div:first')
+//     .fadeOut(1000)
+//     .next()
+//     .fadeIn(1000)
+//     .end()
+//     .appendTo('.background-mobi');
+// },  3000);
 
 function about() {
   var x = document.getElementById("information");
@@ -26,6 +26,7 @@ function about() {
   if (x.style.display != "block") {
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
+
     }
     if(document.getElementById("calendar").style.display =="block"){
       document.getElementById("calendar").style.display="none"
@@ -36,11 +37,10 @@ function about() {
     if(document.getElementById("contact").style.display =="block"){
       document.getElementById("contact").style.display="none"
     }
-
-
+    document.getElementById("my-slider").style.display=""
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    // x.style.display = "none";
   }
 }
 
@@ -48,7 +48,8 @@ function team() {
   var x = document.getElementById("team");
   if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
-      document.getElementById("information").style.display="none"
+      document.getElementById("information").style.display="none";
+      document.getElementById("my-slider").style.display="none"
     }
     if(document.getElementById("calendar").style.display =="block"){
       document.getElementById("calendar").style.display="none"
@@ -59,9 +60,10 @@ function team() {
     if(document.getElementById("contact").style.display =="block"){
       document.getElementById("contact").style.display="none"
     }
+   document.getElementById("my-slider").style.display="none"
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    // x.style.display = "none";
   }
   }
 
@@ -70,6 +72,7 @@ function team() {
   if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
+      document.getElementById("my-slider").style.display="none"
     }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
@@ -80,9 +83,10 @@ function team() {
     if(document.getElementById("contact").style.display =="block"){
       document.getElementById("contact").style.display="none"
     }
+    document.getElementById("my-slider").style.display="none"
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    // x.style.display = "none";
   }
   }
 
@@ -91,6 +95,7 @@ function team() {
   if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
+      document.getElementById("my-slider").style.display="none"
     }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
@@ -101,9 +106,10 @@ function team() {
     if(document.getElementById("contact").style.display =="block"){
       document.getElementById("contact").style.display="none"
     }
+    document.getElementById("my-slider").style.display="none"
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    // x.style.display = "none";
   }
   }
 
@@ -114,6 +120,7 @@ function team() {
   if (x.style.display != "block") {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
+      document.getElementById("my-slider").style.display="none"
     }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
@@ -124,28 +131,11 @@ function team() {
     if(document.getElementById("gallery").style.display =="block"){
       document.getElementById("gallery").style.display="none"
     }
+    document.getElementById("my-slider").style.display="none"
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    // x.style.display = "none";
   }
-  }
-
-  function slideshow(){
-    if(document.getElementById("information").style.display =="block"){
-      document.getElementById("information").style.display="none"
-    }
-    if(document.getElementById("team").style.display =="block"){
-      document.getElementById("team").style.display="none"
-    }
-     if(document.getElementById("calendar").style.display =="block"){
-      document.getElementById("calendar").style.display="none"
-    }
-    if(document.getElementById("gallery").style.display =="block"){
-      document.getElementById("gallery").style.display="none"
-    }
-    if(document.getElementById("contact").style.display =="block"){
-      document.getElementById("contact").style.display="none"
-    }
   }
 
  $(".trigger_popup_fricc").click(function(){
@@ -186,3 +176,26 @@ function openCity(evt, cityName) {
 }
 
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  slides[slideIndex-1].style.display = "block"; 
+}

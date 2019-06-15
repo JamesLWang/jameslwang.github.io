@@ -203,14 +203,12 @@ br .desc{
 
  
 #information{
-  display: none;
-  top: 5%;
-  bottom: 5%;
-  position: fixed;
-  margin-left: 27.5%;
-  max-height: 95%;
-  width: 68%;
-  opacity: 0.80;
+  display: block;
+  position: absolute;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
   background-color: white;
   overflow-wrap: break-word;
   padding:10px;
@@ -220,63 +218,53 @@ br .desc{
 
 #calendar{
   display: none;
-  top: 5%;
-  bottom: 5%;
   position: fixed;
-  margin-left: 27.5%;
-  max-height: 95%;
-  width: 68%;
-  opacity: 0.95;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
   background-color: white;
   overflow-wrap: break-word;
   padding:10px;
   text-align: justify;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 #team{
   display: none;
-  top: 5%;
-  bottom: 5%;
   position: fixed;
-  margin-left: 27.5%;
-  max-height: 95%;
-  width: 68%;
-  opacity: 0.95;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
   background-color: white;
   overflow-wrap: break-word;
   padding:10px;
   text-align: justify;
-  overflow-x:hidden;
   overflow-y: auto;
 }
 
 #gallery{
   display: none;
-  top: 5%;
-  bottom: 5%;
   position: fixed;
-  margin-left: 27.5%;
-  max-height: 95%;
-  width: 68%;
-  opacity: 0.95;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
   background-color: white;
   overflow-wrap: break-word;
-  padding:10px;
+  padding:20px;
   text-align: justify;
   overflow-y: auto;
 }
 
 #contact{
   display: none;
-  top: 5%;
-  bottom: 5%;
   position: fixed;
-  margin-left: 27.5%;
-  max-height: 95%;
-  width: 68%;
-  opacity: 0.80;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
   background-color: white;
   overflow-wrap: break-word;
   padding:10px;
@@ -316,7 +304,7 @@ br .desc{
 @media (max-width: 992px) { 
 
   #information{
-  display: none;
+  display: block;
   top: 8%;
   position: fixed;
   max-height: 93%;
@@ -366,10 +354,11 @@ br .desc{
   opacity: 0.95;
   background-color: white;
   overflow-wrap: break-word;
-  padding:10px;
+  padding:20px;
   text-align: justify;
   overflow-y: auto;
   overflow-x: hidden;
+
 }
 
 #contact{
@@ -634,7 +623,7 @@ input[type=submit]:hover {
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
 
 /* Style the buttons inside the tab */
@@ -651,19 +640,19 @@ input[type=submit]:hover {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-top: none;
 }
 
@@ -673,26 +662,27 @@ input[type=submit]:hover {
 
 [data-tabs] {
  display: flex;
- background: #eee;
- padding: 10px;
- border: 2px solid #ccc;
- overflow-x: scroll;
+ background: #fff;
+ padding: 3px;
+ border: 2px solid #fff;
+ overflow-x: auto;
 }
 
 [data-tabs] >* {
- padding: 5px 20px;
+ padding: 5px 12px;
  cursor: pointer;
 }
 
 [data-tabs] .active {
-  background: #31a3e8;
-  color: #fff;
-  border-radius: 0px;
+  background: #fff; 
+  color: rgb(157,70,73);
+  outline-color: black;
+  outline-width: 3px;
 }
 
 [data-panes] > * {
  display: none;
- border: 0px solid #ccc;
+ border: 0px solid #fff;
  border-top: none;
  padding: 0px;
 }
@@ -706,6 +696,44 @@ input[type=submit]:hover {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: #fff;
     z-index: 1000;
 }
+
+.content{
+  padding: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  margin: auto;
+  width: 90%;
+  height: 60%;
+  position: relative;
+}
+
+#mission{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  text-align: justify;
+}
+.heading{
+  color: rgb(157,70,73);
+}
+
+.subheading{
+  color: rgb(114,94,155);
+}
+
+form{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top:10px;
+}
+
