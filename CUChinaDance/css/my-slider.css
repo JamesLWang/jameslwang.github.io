@@ -292,7 +292,7 @@ p.ism-badge a.ism-link:hover {
 
 /*HEIGHT*/
 #my-slider:before {
-    content: ''; display: block; padding-top: 55%;
+    content: ''; display: block; padding-top: 50%;
 }
 
 #my-slider .ism-frame {

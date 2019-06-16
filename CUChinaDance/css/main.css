@@ -201,7 +201,20 @@ br .desc{
 
 @media(min-width: 992px){
 
- 
+ #about{
+  display: none;
+  position: absolute;
+  margin-left: 22.0%;
+  height: 100%;
+  width: 78%;
+  opacity: 1.00;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:10px;
+  text-align: justify;
+  overflow-y: auto;
+}
+
 #information{
   display: block;
   position: absolute;
@@ -302,6 +315,22 @@ br .desc{
 }
 
 @media (max-width: 992px) { 
+
+  
+  
+  #about{
+  display: none;
+  top: 8%;
+  position: fixed;
+  max-height: 93%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:10px;
+  text-align: justify;
+  overflow-y: auto;
+}
 
   #information{
   display: block;
@@ -720,6 +749,15 @@ input[type=submit]:hover {
   padding-right: 20px;
   line-height: 1.5em;
   font-size: 1.2em;
+  text-align: justify;
+}
+
+#updates{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.0em;
+  font-size: 1.0em;
   text-align: justify;
 }
 .heading{

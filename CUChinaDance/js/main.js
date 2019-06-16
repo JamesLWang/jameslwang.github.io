@@ -20,29 +20,33 @@
 //     .appendTo('.background-mobi');
 // },  3000);
 
-function about() {
+function splash() {
   var x = document.getElementById("information");
-  console.log(x)
-  if (x.style.display != "block") {
-    if(document.getElementById("team").style.display =="block"){
-      document.getElementById("team").style.display="none"
-
-    }
-    if(document.getElementById("calendar").style.display =="block"){
-      document.getElementById("calendar").style.display="none"
-    }
-    if(document.getElementById("gallery").style.display =="block"){
-      document.getElementById("gallery").style.display="none"
-    }
-    if(document.getElementById("contact").style.display =="block"){
-      document.getElementById("contact").style.display="none"
-    }
-    document.getElementById("my-slider").style.display=""
+  
+  document.getElementById("about").style.display="none"
+  document.getElementById("team").style.display="none"
+  document.getElementById("calendar").style.display="none"
+  document.getElementById("gallery").style.display="none"
+  document.getElementById("contact").style.display="none"
+  document.getElementById("my-slider").style.display="block"
+  document.getElementById("information").style.display="block"
+    
     x.style.display = "block";
-  } else {
-    // x.style.display = "none";
-  }
-}
+  } 
+
+
+function about() {
+  var x = document.getElementById("about");
+  console.log(x)
+  document.getElementById("my-slider").style.display=""
+  document.getElementById("information").style.display="none"
+  document.getElementById("team").style.display="none"
+  document.getElementById("calendar").style.display="none"
+  document.getElementById("gallery").style.display="none"
+  document.getElementById("contact").style.display="none"
+    
+    x.style.display = "block";
+  } 
 
 function team() {
   var x = document.getElementById("team");
@@ -50,6 +54,9 @@ function team() {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none";
       document.getElementById("my-slider").style.display="none"
+    }
+    if(document.getElementById("about").style.display =="block"){
+      document.getElementById("about").style.display="none"
     }
     if(document.getElementById("calendar").style.display =="block"){
       document.getElementById("calendar").style.display="none"
@@ -74,6 +81,9 @@ function team() {
       document.getElementById("information").style.display="none"
       document.getElementById("my-slider").style.display="none"
     }
+    if(document.getElementById("about").style.display =="block"){
+      document.getElementById("about").style.display="none"
+    }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
     }
@@ -96,6 +106,9 @@ function team() {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
       document.getElementById("my-slider").style.display="none"
+    }
+    if(document.getElementById("about").style.display =="block"){
+      document.getElementById("about").style.display="none"
     }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
@@ -121,6 +134,9 @@ function team() {
     if(document.getElementById("information").style.display =="block"){
       document.getElementById("information").style.display="none"
       document.getElementById("my-slider").style.display="none"
+    }
+    if(document.getElementById("about").style.display =="block"){
+      document.getElementById("about").style.display="none"
     }
     if(document.getElementById("team").style.display =="block"){
       document.getElementById("team").style.display="none"
