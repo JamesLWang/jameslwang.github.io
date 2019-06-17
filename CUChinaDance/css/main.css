@@ -23,6 +23,7 @@ html, body {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: #9c8eb9;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -295,6 +296,7 @@ br .desc{
 .teamName{
   font-size: 1.3em;
   line-height: 0.9em;
+  color: rgb(114,94,155);
 }
 
 @media(min-width: 1338px){
@@ -316,7 +318,7 @@ br .desc{
 
 @media (max-width: 992px) { 
 
-  
+
   
   #about{
   display: none;
