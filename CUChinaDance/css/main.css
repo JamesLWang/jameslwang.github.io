@@ -319,8 +319,8 @@ br .desc{
   }
 }
 
-@media (max-width: 992px) { 
 
+@media (max-width: 992px) { 
 
   
   #about{
@@ -410,6 +410,95 @@ br .desc{
 }
 }
 
+/*About bar*/
+@media (max-width: 400px) { 
+  #about{
+  display: none;
+  top: 12%;
+  position: fixed;
+  max-height: 93%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:20px;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+  #information{
+  display: block;
+  top: 15%;
+  position: fixed;
+  max-height: 93%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:10px;
+  text-align: justify;
+  overflow-y: auto;
+}
+#team{
+  display: none;
+  top: 12%;
+  position: fixed;
+  max-height: 93%;
+  width: 100%;
+  opacity: 0.95;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:20px;
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#calendar{
+  display: none;
+  top: 12%;
+  position: fixed;
+  height: 93%;
+  width: 100%;
+  opacity: 0.95;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:20px;
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#gallery{
+  display: none;
+  top: 12%;
+  position: fixed;
+  height: 93%;
+  width: 100%;
+  opacity: 0.95;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:20px;
+  text-align: justify;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+#contact{
+  display: none;
+  top: 12%;
+  position: fixed;
+  max-height: 93%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: white;
+  overflow-wrap: break-word;
+  padding:20px;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+  }
 
 .col-4{
 
