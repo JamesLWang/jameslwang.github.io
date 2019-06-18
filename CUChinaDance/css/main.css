@@ -303,6 +303,7 @@ br .desc{
 @media(min-width: 1338px){
    #normal{
     display: block;
+    padding:20px;
   }
   #mobi{
     display: none;
@@ -314,6 +315,7 @@ br .desc{
   }
   #mobi{
     display: block;
+    padding: 20px;
   }
 }
 
