@@ -128,12 +128,12 @@ html, body {
 
 /*
 iframe{
-	margin-left: 5%;
-	display: block;
-	border-width: 0px;
-	padding: 5px;
-	width:90%;
-	align-content: center;
+  margin-left: 5%;
+  display: block;
+  border-width: 0px;
+  padding: 5px;
+  width:90%;
+  align-content: center;
 }
 */
 
@@ -166,7 +166,7 @@ br .desc{
 
 @media (min-width: 992px) { 
 .background-mobi{
-	display: none;
+  display: none;
 }
 
  .background-wide{
@@ -196,7 +196,7 @@ br .desc{
   }
 
   .background-wide{
-	display: none;
+  display: none;
 }
 }
 
@@ -320,7 +320,7 @@ br .desc{
 }
 
 
-@media (max-width: 992px) { 
+@media (min-width: 401px and max-width: 992px) { 
 
   
   #about{
@@ -414,7 +414,7 @@ br .desc{
 @media (max-width: 400px) { 
   #about{
   display: none;
-  top: 12%;
+  top: 15%;
   position: fixed;
   max-height: 93%;
   width: 100%;
@@ -455,7 +455,7 @@ br .desc{
 }
 #calendar{
   display: none;
-  top: 12%;
+  top: 15%;
   position: fixed;
   height: 93%;
   width: 100%;
@@ -470,7 +470,7 @@ br .desc{
 
 #gallery{
   display: none;
-  top: 12%;
+  top: 15%;
   position: fixed;
   height: 93%;
   width: 100%;
@@ -486,7 +486,7 @@ br .desc{
 
 #contact{
   display: none;
-  top: 12%;
+  top: 15%;
   position: fixed;
   max-height: 93%;
   width: 100%;
