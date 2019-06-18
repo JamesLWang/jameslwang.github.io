@@ -320,12 +320,12 @@ br .desc{
 }
 
 
-@media (min-width: 401px and max-width: 992px) { 
+@media (min-width: 401px) and (max-width: 992px) { 
 
   
   #about{
   display: none;
-  top: 8%;
+  top: 12%;
   position: fixed;
   max-height: 93%;
   width: 100%;
@@ -339,7 +339,7 @@ br .desc{
 
   #information{
   display: block;
-  top: 8%;
+  top: 12%;
   position: fixed;
   max-height: 93%;
   width: 100%;
@@ -352,7 +352,7 @@ br .desc{
 }
 #team{
   display: none;
-  top: 8%;
+  top: 12%;
   position: fixed;
   max-height: 93%;
   width: 100%;
@@ -366,7 +366,7 @@ br .desc{
 }
 #calendar{
   display: none;
-  top: 8%;
+  top: 12%;
   position: fixed;
   height: 93%;
   width: 100%;
@@ -381,7 +381,7 @@ br .desc{
 
 #gallery{
   display: none;
-  top: 8%;
+  top: 12%;
   position: fixed;
   height: 93%;
   width: 100%;
@@ -397,7 +397,7 @@ br .desc{
 
 #contact{
   display: none;
-  top: 8%;
+  top: 12%;
   position: fixed;
   max-height: 93%;
   width: 100%;
