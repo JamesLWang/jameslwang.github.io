@@ -1,172 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Columbia China Dance">
+    <meta name="author" content="James Wang">
     <link rel="icon" type="image/png" href="assets/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="text/javascript" src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Columbia China Dance</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
 
-    <title>James Wang</title>
-
-    <!--Bootstrap CSS and fonts-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <script src="jquery.min.js"></script>
-
-    <!--Personal CSS file-->
-    <link rel="stylesheet" type = "text/css" href="css/main.css">
-
-    <!--Animation-->
-    <script src="js/typed.js" type="text/javascript"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-     <script>
-      
-
-      $(function(){
-      $("#description").typed({
-        strings: ["an Aspiring Scientist.", "a Tech Entrepreneur.", "a Photographer.", "James."],
-        typeSpeed: 80, // typing speed
-        backDelay: 500, // pause before backspacing
-        loop: false,
-        callback: function(){
-          appear();
-        }
-      });
-    });
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 
-    function appear(){
-     $(".animation").addClass("appear");
-    }
-
-    </script>
-
-    <!--Analytics-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131739750-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-131739750-1');
-    </script>
-
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-slider.css"/>
+    <script src="js/ism-2.2.min.js"></script>
   </head>
-
   <body>
-    <section id="splash">
-      <div style="position: relative; top: 25%; display: block;">
-        <p class = "name">
-          James Wang
-        </p>
-        <div class = "bar"></div>
-        <br>
-        <div class = "animation">
-          <h3 class="text"><i>I'm <span id="description"></span></i></h3>
-          <p class="subtext">Aspiring Scientist. Tech Entrepreneur. Photographer.</p>
-        </div>
-        </div>
+    <img style="display: none" src="assets/logo.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="./index.html">
+      <span class="d-block d-lg-none"><span class="heading">Columbia China Dance </span><span style="color: black">|</span> <span class="subheading">哥大舞韵</span></span>
+      <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/logo.jpg" alt="">
+      </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./about.html  ">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./team.html  "">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./calendar.html  ">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./gallery.html  ">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./contact.html  ">Contact Us</a>
+          </li>
+          <div id="logos">
 
-        <div class="icons" style="position: relative; top: 30%">
-          <a href="https://github.com/jameslwang">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-
-          <a href="mailto:wang.james@columbia.edu">
-            <i class="fa fa-paper-plane"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/jameswang1279">
-            <i class="fa fa-linkedin"></i>
-          </a>
-
-          <a href="https://engineering.columbia.edu/egleston-scholars/james-wang">
-            <i class="fa fa-university" aria-hidden="true"></i>
-          </a>
-        </div>
+          </div>
+       
+       
+                  <li class="nav-item">
+              <a href="https://www.facebook.com/ColumbiaChinaDance/"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/cuchinadance/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCDBTCQEIVE6HYAxIGkeBJVw?view_as=subscriber"><i class="fab fa-youtube"></i>
+               <a class="trigger_popup_fricc"><i class="fab fa-weixin"></i> </a></a>
+              <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                  <div class="popupCloseButton">X</div>
+                  <img style="width: 100%" src="assets/qr.png">
+                  <p>微信公众号：CUChinaDance</p>
+                </div>
+              </div>
+            </li>
+            <br>
       </div>
-    </section>
-
-    <section id="about">
-      <div style="position: relative;">
-        <br>
-        <p><h2><b> About Me </b></h2 ></p>
-        <div class="row">
-    <div class="col-sm-5"><img src="assets/portrait.JPG" class="mx-auto d-block" style = "max-width:40%; max-height: 80%;"></div>
-    <div class="col-sm-7" align="justify">Hi there! I'm a big-data oriented software engineer, studying Computer Science at Columbia University. <br> <br>Currently, I am interning at the Zuckerman Research Centrer at Memorial Sloan-Kettering Cancer Center working on computer vision models for medical imaging. In the past, I have worked at UCSB's MIRAGE lab. <b> This page is still under construction. Please email me if you have any inquiries. :) </b> </div>
-</div>
-        
       </div>
-    </section>
-
-    <section id = "projects">
-      <div style="position: relative;">
-        <br>
-        <p><h3>Projects</h3></p>
-        <div class="row">
-        <div class="col">
-          AR-Based Minesweeper
-          <img src = "assets/Minesweeper.png" class="mx-auto d-block" style="max-height: 40%; max-width: 100%;">
-        </div>
-        <div class="col">
-          SpineAlign
-          <img src = "assets/SpineAlign.png" class="mx-auto d-block" style="max-height: 40%; max-width: 100%;">
-        </div>
-        <div class="col">
-          Medical Imaging
-          <img src="assets/MedicalImaging.png" class="mx-auto d-block" style="max-height: 40%; max-width:100%">
-        </div>
-
-        <br>
+      </ul>
       </div>
-    </section>
+    </nav>
+   
 
-    <section id = "resume">
-      <div style="position: relative;">
+    <div id="information">
+      <center>
+        <h1 class="heading">Welcome to Columbia China Dance!</h1>
+        <h2 class="heading">欢迎参访哥大舞韵！</h2>
         <br>
-        <center>
-        <div id = "box"><h3> <a href="assets/resume.pdf">RESUME</a></h3></div>
       </center>
+
+      <!--Generated using https://imageslidermaker.com/v2-->
+      <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-radios="false" id="my-slider">
+  <ol>
+    <li>
+      <img src="assets/Horiz_1.JPG">
+    </li>
+    <li>
+      <img src="assets/Horiz_2.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_3.jpg">
+    </li>
+        <li>
+      <img src="assets/Horiz_4.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_5.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_6.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_8.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_9.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_10.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_11.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_12.JPG">
+    </li>
+    <li>
+      <img src="assets/Horiz_13.JPG">
+    </li>
+    <li>
+      <img src="assets/Horiz_14.jpg">
+    </li>
+    <li>
+      <img src="assets/Horiz_15.jpg">
+    </li>
+  </ol>
+</div>
+
+      <div id="mission" class="subheading">
+          Columbia China Dance seeks to spread awareness of and share the beauty of Chinese culture with the Columbia community and greater NYC area through the performance and outreach of authentic Chinese classical and folk dances.
+          <br>
+          <br>
+          <div id="mission-cn">
+            <center>舞韵旨在以表演中国古典舞和民族舞的形式将中国文化在哥大校园以及纽约地区推广。</center>
+          </div>
+      </div>
+
+      <div id="updates">
         <br>
+        <h3 class="heading">Recent Updates</h3>
+        <div id="Event_1">
+        <b><i>March 10, 2019</i></b>
+        <br>
+        <br>
+        Columbia China Dance hosted its first ever showcase “Castle in the Air,”《镜花水月》, highlighting Chinese classical, folk, and contemporary style dances. Members from outside the Columbia community were invited to perform as well, including dancers from Asian Fusion Dance at NYU and Sunshine Dance. With the collaborative efforts of more than 80 performers and backstage workers, the showcase was a success, receiving extensive attention and praise from the greater NYC community. Columbia China Dance was also honored to have famous Chinese dancer, Lijun Zhou (周丽君), teach members her signature dance, Duex Belle (尤物). Following the performance, board members and Ms. Zhou was interviewed by many media and was featured twice by People’s Daily Online. 
+        <br>
+        <br>
+        People’s Daily Online (人民网):
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="http://paper.people.com.cn/rmrbhwb/html/2019-04/15/content_1919623.htm"><img style="width:100%" src="assets/people_cn_1.jpg"></a>
+          </div>
+          <div class="col-sm-3">
+            <a href="http://paper.people.com.cn/rmrbhwb/html/2019-03/25/content_1915690.htm"><img style="width:100%" src="assets/people_cn_2.jpg"></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <a href=" https://mp.weixin.qq.com/s/OwF2DZgG3rZqOpBkNAgNPg">Interview by 势Wave at Columbia</a>      
       </div>
-    </section>
-
-
-    <section id = "footer">
-      <div style="position: relative;">
-        <left>© 2019 James Wang</left>
-        <right>All Rights Reserved</right>
       </div>
-    </section>
-
-    <section id="navbar">
-      <a href="#home">James Wang</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="underconstruction.html">Photography</a>
+      <br>
+      <br>
     </div>
+   
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script src="js/tabbis.js"></script>
+    <script>
+      var tabs = tabbis.init({
+      tabGroup: '[data-tabs]',
+      paneGroup: '[data-panes]',
+      tabActive: 'active',
+      paneActive: 'active',
+      callback: function(tab, pane) {
+      console.log(tab);
+      console.log(pane);
+      }
+      });
+    </script>
 
-
-      <script>
-    window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
-
-  
-  </script>
-
-
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+          
+    </script>
   </body>
 </html>
