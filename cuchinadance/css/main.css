@@ -315,7 +315,7 @@ br .desc{
   }
   #mobi{
     display: block;
-    padding: 15px;
+    padding: 0px;
   }
 }
 
@@ -587,7 +587,7 @@ br .desc{
 }
 
 .row-mobi{
-  padding: 15px;
+  padding: 10px;
 }
 
 .pic-align{
@@ -892,3 +892,31 @@ form{
   margin: auto;
   position: relative;
 }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56%;
+  position: relative;
+  height: 100%;  
+  width: 95%;
+  margin: auto;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   margin:auto;
+}
+
+a .col-sm-4{
+  margin: auto;
+}
+
+.row .col-sm-4{
+  margin: auto;
+}
+
