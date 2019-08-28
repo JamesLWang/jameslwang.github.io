@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+  overflow: scroll;
+}
+
+body {
+  //background-color: powderblue;
+
+    margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+color: #5D6D7E;
+}
+a:visited {
+color: #5D6D7E;
+}
+a:hover {
+color: #78281F;
+}
+
+hr {
+  width: 90%;
+}
+
+button {  
+  background-color: black;
+  color:white;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Futura";
+  font-size: 16px;
+  padding: 12px 28px;
+}
+
+button:hover {
+  background-color: #E8E8E8;
+  cursor: pointer;
+  color: black;
+}
+
+h1 {
+  color: #000031;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+h1.one {
+  color: black;
+  text-align: left;
+  font-family: "Futura";
+  font-weight: normal;
+  font-variant: small-caps;
+  font-size: 80px;
+  margin-left: 65px;
+  padding-top: 100px;
+}
+
+h2 {
+  color: #000031;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+p {
+  color: #101010;
+  font-family: 'Open Sans', sans-serif;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+li {
+  color: #101010;
+  font-family: 'Open Sans', sans-serif;
+  margin-left:125px;
+}
+
+p.four {
+  color: #101010;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+div.one {
+  background-image: url("tiffany.png");
+  background-position: 50 -50px, -50px;
+  height: 400px;
+  vertical-align: middle;
+  position: relative;
+  overflow: auto;
+}
+
+.col1 {
+  float:left;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  margin-left: 20px;
+  position: relative;
+  text-align: center;
+}
+
+div.two {
+  background-color: white;
+  height: auto; 
+  overflow-y: scroll;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+div.three {
+  background-color: #E8E8E8;
+  height: auto; 
+  overflow-y: scroll;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+div.four {
+  background-color: #E8E8E8;
+  height: auto; 
+  overflow-y: scroll;
+  position: relative;
+}

@@ -29,28 +29,6 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-131739750-1');
 	</script>
-
-    <script>
-      $(function(){
-          $('#description').typed({
-              // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-              strings: ["a Tech Entrepreneur.", "a STEMinist.", "a Violin Player.", "a Speecher/Debater.", "James."],
-              typeSpeed: 60,
-              backDelay: 400,
-              loop: false,
-              contentType: 'text', // or text
-              // defaults to false for infinite loop
-              loopCount: false,
-              callback: function(){
-                lift();
-              }
-          });
-      });
-      function lift(){
-          $(".head-text").addClass("lift-text");
-      }
-    </script>
-
 </head>
 
 <body>
@@ -121,6 +99,27 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
+    <script>
+      $(function(){
+          $('#description').typed({
+              // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+              strings: ["a Tech Entrepreneur.", "a STEMinist.", "a Violin Player.", "a Speecher/Debater.", "James."],
+              typeSpeed: 60,
+              backDelay: 400,
+              loop: false,
+              contentType: 'text', // or text
+              // defaults to false for infinite loop
+              loopCount: false,
+              callback: function(){
+                lift();
+              }
+          });
+      });
+      function lift(){
+          $(".head-text").addClass("lift-text");
+      }
+    </script>
 
 
 	
