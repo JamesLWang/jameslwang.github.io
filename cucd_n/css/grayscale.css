@@ -6,6 +6,15 @@
 
 /*POPUP*/
 
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+  }
+}
 
 /* The Modal (background) */
 .modal {
@@ -273,7 +282,7 @@
 }
 
 .projects-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 
 }
 
@@ -289,13 +298,13 @@
 }
 
 .projects-section .project-text {
-  padding: 3rem;
+  padding: 2rem;
   font-size: 90%;
 }
 
 @media (min-width: 1200px) { /*992 */
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 2rem;
   }
   .projects-section .project-text hr {
     border-color: #64a19d;
