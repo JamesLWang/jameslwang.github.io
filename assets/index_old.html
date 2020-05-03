@@ -15,7 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <script src="js/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
 
     <!--Personal CSS file-->
     <link rel="stylesheet" type = "text/css" href="css/main.css">
@@ -30,16 +30,12 @@
 
       $(function(){
       $("#description").typed({
-        strings: ["<i>I'm an Aspiring Scientist.</i>", "<i>I'm a Tech Entrepreneur.</i>", "<i>I'm a Photographer.</i>", "I'm James.", 
-        "Check out my <div class = 'barB'></div> \
-        &nbsp; <a href='#constructModal' style='color: #D5D8DC'>Project Portfolio</a> <br> \
-        &nbsp; <a href='#constructModal' style='color: #D5D8DC'>Photography Gallery</a>"],
-        typeSpeed: 60, // 80 typing speed
-        backDelay: 300, // 500 pause before backspacing
+        strings: ["an Aspiring Scientist.", "a Tech Entrepreneur.", "a Photographer.", "James."],
+        typeSpeed: 80, // typing speed
+        backDelay: 500, // pause before backspacing
         loop: false,
         callback: function(){
           appear();
-          $(".typed-cursor").hide();
         }
       });
     });
@@ -71,12 +67,12 @@
         <div class = "bar"></div>
         <br>
         <div class = "animation">
-          <h3 class="text"><span id="description"></span></h3>
+          <h3 class="text"><i>I'm <span id="description"></span></i></h3>
           <p class="subtext">Aspiring Scientist. Tech Entrepreneur. Photographer.</p>
         </div>
         </div>
 
-        <div class="icons" style="position: relative; top: 27%">
+        <div class="icons" style="position: relative; top: 30%">
           <a href="https://github.com/jameslwang">
             <i class="fa fa-github-square" aria-hidden="true"></i>
           </a>
@@ -92,25 +88,69 @@
           <a href="https://engineering.columbia.edu/egleston-scholars/james-wang">
             <i class="fa fa-university" aria-hidden="true"></i>
           </a>
-
-          <a href="assets/Resume.pdf">
-            <i class="fa fa-file" aria-hidden="true"></i>
-          </a>
-
         </div>
+      </div>
+    </section>
 
+    <section id="about">
+      <div style="position: relative;">
+        <br>
+        <p><h2><b> About Me </b></h2 ></p>
+        <div class="row">
+    <div align="justify">Hi there! I'm a big-data oriented software engineer, studying Computer Science at Columbia University. <br> <br>Currently, I am interning at the Zuckerman Research Centrer at Memorial Sloan-Kettering Cancer Center working on computer vision models for medical imaging. In the past, I have worked at UCSB's MIRAGE lab. <b> This page is still under construction. Please email me if you have any inquiries. :) </b> </div>
+</div>
+        
+      </div>
+    </section>
+
+    <section id = "projects">
+      <div style="position: relative;">
+        <br>
+        <p><h3>Projects</h3></p>
+        This website is still under construction. Check back later! :) 
+    </section>
+
+    <section id = "resume">
+      <div style="position: relative;">
+        <br>
+        <center>
+        <div id = "box"><h3> <a href="assets/resume.pdf">RESUME</a></h3></div>
+      </center>
+        <br>
       </div>
     </section>
 
 
+    <section id = "footer">
+      <div style="position: relative;">
+        <left>© 2020 James Wang</left>
+        <right>All Rights Reserved</right>
+      </div>
+    </section>
+
+    <section id="navbar">
+      <a href="#home">James Wang</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="underconstruction.html">Photography</a>
+    </div>
+
+
+      <script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+
+  
+  </script>
+
+
   </body>
-
-  <div id="constructModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2>Still Under Construction!</h2>
-		<p>Check Back Later!</p>
-	</div>
-</div>
-
 </html>
