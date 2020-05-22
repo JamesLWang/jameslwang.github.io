@@ -56,12 +56,13 @@
       $("#description2").typed({
         strings: [ 
         "Check out my <div class = 'barB'></div> \
-        &nbsp; <a href='#constructModal' style='color: #D5D8DC'>Project Portfolio</a> <br> \
-        &nbsp; <a href='#constructModal' style='color: #D5D8DC'>Photography Gallery</a>"],
+        &nbsp; <a href='#projects' style='color: #D5D8DC'>Project Portfolio</a> <br> \
+        &nbsp; <a href='photon/index.html' style='color: #D5D8DC'>Photography Gallery</a>"],
         typeSpeed: 90, // 80 typing speed
         backDelay: 500, // 500 pause before backspacing
         loop: false,
         callback: function(){
+        	appear();
           $(".typed-cursor").hide();
         }
       });
@@ -94,7 +95,7 @@
         <div class = "bar"></div>
         <hr style="height:5px; visibility:hidden;" />
         <div class = "animation">
-          <h3 class="text"><span id="description"></span><hr style="height:2px; visibility:hidden;" /><span id="description2"></span></h3>
+          <h3 class="text"><span id="appear"></span><hr style="height:2px; visibility:hidden;" /><span id="description2"></span></h3>
           <p class="subtext">Aspiring Scientist. Tech Entrepreneur. Photographer.</p>
         </div>
         </div>
@@ -119,12 +120,58 @@
           <a href="assets/resume.pdf">
             <i class="fa fa-file" aria-hidden="true"></i>
           </a>
-
+          <br>
+          <br>
+          <a href="#projects"><i class="fa fa-angle-double-down" style="font-size:36px"></i></a>
         </div>
 
       </div>
+
+
     </section>
 
+    <section id="projects" style="background-color: #E0E0E2; min-height: 100%">
+    	<h1><center>Projects</center></h1>
+
+    	<h1><b>Under construction! Check back later! </b></h1>
+    	<!--
+    		Build alternating bootstrap columns (text on left, then right)
+    		On other side, do Modal gallery 
+    		Make sure to link with github!
+    	-->
+    	<br>
+    	<br>
+    	<div id="Project1">
+    		<h3 align="left">COVID-19 Live SIR Model</h3>
+    		<hr>
+
+    	</div>
+
+    	<div id="Project2">
+    		<h3 align="right">Bean</h3>
+    		<hr>
+
+    	</div>
+
+    	<div id="Project3">
+    		<h3 align="left">SpineAlign</h3>
+    		<hr>
+
+    	</div>
+
+    	<div id="Project4">
+    		<h3 align="right">Pulmonary Nodule Classification on Chest X-Rays for Cancer Detection</h3>
+    		<hr>
+
+    	</div>
+
+    	<div id="Project5">
+    		<h3 align="left">Financial Modeling</h3>
+    		<hr>
+
+    	</div>
+
+    </section>
 
   </body>
 
