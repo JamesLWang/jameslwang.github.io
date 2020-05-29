@@ -73,6 +73,24 @@
      $(".animation").addClass("appear");
     }
 
+    $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
+
     </script>
 
     <!--Analytics-->
@@ -135,7 +153,7 @@
     	<h1><center>Projects</center></h1>
 
     	<h1><b><center>Under construction! Check back later!</center> </b></h1>
-    	<h2> <center>Feel free to check out my Github! </center></h2>
+    	<h2> <center>In the meantime, feel free to check out my Github! </center></h2>
     	<!--
     		Build alternating bootstrap columns (text on left, then right)
     		On other side, do Modal gallery 
@@ -145,60 +163,72 @@
     	-->
     	<br>
     	<br>
-    	<div id="Project1">
+    	<div class="fade" id="Project1">
     		<hr>
 			<div class="container">
 				<div class="row">
 				<div class="col-sm-8">
 					<center>
-						<h1><bold>COVID-19 Live SIR Model</bold></h1>
-					</center>
+						<h2><bold><font color="red">*</font>COVID-19 <font color="red">Live</font> SIR Model</bold></h2>
+					</center><br>
+          Insert more test here.
 				</div>
-				<div class="col-sm-4">col-sm-4</div>
-				</div>
-			</div>
-
-    	</div>
-
-    	<div id="Project2">
-    		<hr>
-			<div class="container">
-				<div class="row">
-				<div class="col-sm-4">col-sm-4</div>
-				<div class="col-sm-8"><h1><bold>Bean</bold></h1></div>
+				<div class="col-sm-4">Insert GIF showing animation of notebook</div>
 				</div>
 			</div>
 
     	</div>
 
-    	<div id="Project3">
+    	<div class="fade" id="Project2">
     		<hr>
 			<div class="container">
 				<div class="row">
-				<div class="col-sm-8"><h1><bold>SpineAlign</bold></h1></div>
-				<div class="col-sm-4">col-sm-4</div>
+				<div class="col-sm-4">Show slideshow of images and TIF of interface</div>
+				<div class="col-sm-8">
+          <center>
+          <h2><bold>Bean</bold></h2><br>
+          Insert more test here.
+          </center>
+        </div>
 				</div>
 			</div>
 
     	</div>
 
-    	<div id="Project4">
+    	<div class="fade" id="Project3">
     		<hr>
 			<div class="container">
 				<div class="row">
-				<div class="col-sm-4">col-sm-4</div>
-				<div class="col-sm-8"><h1><bold>Pulmonary Nodule Classification on Chest X-Rays for Cancer Detection</bold></h1></div>
+				<div class="col-sm-8"><center><h2><bold>SpineAlign</bold></h2></center><br>
+          Insert more test here.</div>
+				<div class="col-sm-4">Show slideshow of images and TIF of interface</div>
 				</div>
 			</div>
 
     	</div>
 
-    	<div id="Project5">
+    	<div class="fade" id="Project4">
     		<hr>
 			<div class="container">
 				<div class="row">
-				<div class="col-sm-8"><h1><bold>Financial Modeling</bold></h1></div>
-				<div class="col-sm-4">col-sm-4</div>
+				<div class="col-sm-4">Show Images</div>
+				<div class="col-sm-8"><center><h2><bold>Pulmonary Nodule Classification on Chest X-Rays for Cancer Detection</bold></h12></center><br>
+          Insert more test here.</div>
+				</div>
+			</div>
+
+    	</div>
+
+    	<div class="fade" id="Project5">
+    		<hr>
+			<div class="container">
+				<div class="row">
+				<div class="col-sm-8"><center><h2><bold>Financial Modeling</bold></h2></center>
+          <br>
+          Insert more test here.
+        </div>
+
+				<div class="col-sm-4">Show Images</div>
 				</div>
 			</div>
     </div>

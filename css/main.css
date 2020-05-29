@@ -269,6 +269,12 @@ body {
   }
 }
 
+.fade {
+  margin: 50px;
+  padding: 10px;
+  opacity: 1;
+}
+
 @-o-keyframes fadeIn {
   0% {
     opacity:0;
