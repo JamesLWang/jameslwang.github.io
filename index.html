@@ -43,7 +43,7 @@
         strings: ["<i>I'm an Aspiring Scientist.</i>", "<i>I'm a Tech Entrepreneur.</i>", "<i>I'm a Photographer.</i>", "I'm James.", " "
         ],
         typeSpeed: 40, // 80 typing speed
-        backDelay: 200, // 500 pause before backspacing
+        backDelay: 80, // 500 pause before backspacing
         loop: false,
         callback: function(){
           appear();
@@ -58,8 +58,8 @@
         "Check out my <div class = 'barB'></div> \
         &nbsp; <a href='#project' style='color: #D5D8DC'>Project Portfolio</a> <br> \
         &nbsp; <a href='photon/index.html' style='color: #D5D8DC'>Photography Gallery</a>"],
-        typeSpeed: 90, // 80 typing speed
-        backDelay: 500, // 500 pause before backspacing
+        typeSpeed: 20, // 80 typing speed
+        backDelay: 30, // 500 pause before backspacing
         loop: false,
         callback: function(){
         	appear();
@@ -82,9 +82,9 @@
       
       /* If the element is completely within bounds of the window, fade it in */
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+        if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
       } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+        if ($(this).css("opacity")==1) {$(this).fadeTo(200,0);}
       }
     });
   }).scroll(); //invoke scroll-handler on page-load
@@ -153,14 +153,66 @@
     	<h1><center>Projects</center></h1>
 
     	<h1><b><center>Under construction! Check back later!</center> </b></h1>
-    	<h2> <center>In the meantime, feel free to check out my Github! </center></h2>
-    	<!--
+      <h2> <center>In the meantime, feel free to check out my Github! </center></h2>
+
+      <div>
+        <div class="row" style="padding: 10px">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>Bean</b></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Github Link</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b>SpineAlign</b></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Github Link</a>
+              </div>
+            </div>
+      
+          
+          </div>
+        </div>
+        <div class="row" style="padding: 10px">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><b><font color="red">* </font>COVID 19 <font color="red">Live</font> SIR Model</b></h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Demo Link</a>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Lung Nodule Classification for Early Cancer Detection</b></h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Paper Link</a>
+                </div>
+              </div>      
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      
+      <!--
+
     		Build alternating bootstrap columns (text on left, then right)
     		On other side, do Modal gallery 
     		Make sure to link with github!
 
     		Add parallax effect to each with a relevant background for all! 
-    	-->
+
     	<br>
     	<br>
     	<div class="fade" id="Project1">
@@ -232,6 +284,8 @@
 				</div>
 			</div>
     </div>
+
+  -->
     </section>
 
   </body>
