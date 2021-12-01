@@ -1,123 +1,203 @@
-<!doctype html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165349611-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  gtag('config', 'UA-165349611-1');
-</script>
+  <title>James Wang</title>
+  
+  <meta name="author" content="James Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="text/javascript" src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <title>James Wang</title>
-
-    <!--Bootstrap CSS and fonts-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <script src="js/jquery.min.js"></script>
-
-    <!--Personal CSS file-->
-    <link rel="stylesheet" type = "text/css" href="css/main.css">
-
-    <!--Animation-->
-    <script src="js/typed.js" type="text/javascript"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-     <script>
-      
-
-      $(function(){
-      $("#description").typed({
-        strings: ["<i>I'm an Aspiring Scientist.</i>", "<i>I'm a Tech Entrepreneur.</i>", "<i>I'm a Photographer.</i>", "I'm James."],
-        typeSpeed: 60, // 80 typing speed
-        backDelay: 300, // 500 pause before backspacing
-        loop: false,
-        callback: function(){
-          appear();
-          $(".typed-cursor").hide();
-        }
-      });
-    });
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>James Wang</name>
+              </p>
+              <p>I am a fourth year student at Columbia University studying Computer Science and Applied Mathematics. I'm interested in computer vision, machine learning, and computational biology, and my current research focuses on how we can develop more secure and robust deep learning models. If you are interested in these things as well, let's chat!
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:wang.james@columbia.edu">Email</a> &nbsp/&nbsp
+                <a href="https://jameslwang.s3.amazonaws.com/WangJames_Resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://github.com/jameslwang/">Github</a> &nbsp/&nbsp
+                <a href="https://linkedin.com/in/jameswang1279/">Linkedin</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/james_wang.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/james_wang.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am working in Columbia's Computer Vision Lab advised by Prof. <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a> with PhD student <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a> and Columbia's Computational Biology Lab advised by Prof. <a href="https://www.azizilab.com/">Elham Azizi</a>. Previously, I worked in Prof. <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>'s group at Memorial Sloan-Kettering Cancer Center with PhD student <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    function appear(){
-     $(".animation").addClass("appear");
-    }
+          <tr onmouseout="survey_stop()" onmouseover="survey_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='npil_image'>
+                  <img src='images/causal_transport.png' width="180"></div>
+                <img src='images/causal_transport.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function survey_start() {
+                  document.getElementById('survey_image').style.opacity = "1";
+                }
 
-    </script>
+                function survey_stop() {
+                  document.getElementById('survey_image').style.opacity = "0";
+                }
+                survey_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.cs.columbia.edu/~jlw2247/CausalTransport.pdf">
+                <papertitle>Causal Transportability for Neural Representations</papertitle>
+              </a>
+              <br>
+							<a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>, 
+							<strong>James Wang</strong>
+							<a href="https://springo.github.io/">Kevin Xia</a>, 
+							<a href="http://www.wanghao.in/">Hao Wang</a>,
+              <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>,
+              <a href="https://causalai.net/">Elias Bareinboim</a>,
+              <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a> 
+              <br>
+							<!-- <em>arXiv</em>, 2021 -->
+              <br>
+              <a href="https://www.cs.columbia.edu/~jlw2247/CausalTransport.pdf">Paper</a>
+              <p></p>
+              <p>
+              
+              </p>
+            </td>
+          </tr>
+					
+          <tr onmouseout="npil_stop()" onmouseover="npil_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='npil_image'>
+                  <img src='images/image_abstract.jpeg' width="180"></div>
+                <img src='images/image_abstract.jpeg' width="180">
+              </div>
+              <script type="text/javascript">
+                function npil_start() {
+                  document.getElementById('npil_image').style.opacity = "1";
+                }
 
-    <!--Analytics-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131739750-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-131739750-1');
-    </script>
+                function npil_stop() {
+                  document.getElementById('npil_image').style.opacity = "0";
+                }
+                npil_stop()
+              </script>
 
-  </head>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">
+                <papertitle>Signatures of plasticity, metastasis, and immunosuppression in an atlas of human small cell lung cancer</papertitle>
+              </a>
+              <br>
 
-  <body>
-    <section id="splash">
-      <div style="position: relative; top: 25%; display: block;">
-        <p class = "name">
-          James Wang
-        </p>
-        <div class = "bar"></div>
-        <br>
-        <div class = "animation">
-          <h3 class="text"><span id="description"></span></h3>
-          <p class="subtext">Aspiring Scientist. Tech Entrepreneur. Photographer.</p>
-        </div>
-        </div>
+              <a href="https://www.mskcc.org/research/ski/labs/members/joseph-chan">Joseph M Chan</a>, 
+              <a href="https://www.mskcc.org/research-areas/labs/members/alvaro-villalonga">Álvaro Quintanal-Villalonga</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/vianne-gao">Vianne Ran Gao</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>,
+              <a href="https://www.sloankettering.edu/research-areas/labs/members/viola-allaj">Viola Allaj</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/ojasvi-chaudhary">Ojasvi Chaudhary</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/ignas-masilionis">Ignas Masilionis</a>,
+              <a href="https://synapse.mskcc.org/synapse/people/21165-Jacklynn_Egger">Jacklynn Egger</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/andrew-chow">Andrew Chow</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/thomas-walle">Thomas Walle</a>,
+              <a href="https://synapse.mskcc.org/synapse/people/17512-Marissa_Mattar">Marissa Mattar</a>,
+              <a href="https://digvijayky.com/">Dig V K Yarlagadda</a>,
+              <strong>James L Wang</strong>,
+              <a href="https://www.mskcc.org/research-areas/labs/members/fathema-uddin">Fathema Uddin</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/michael-offin">Michael Offin</a>,
+              <a href="https://www.mskcc.org/research-areas/labs/members/metamia-ciampricotti">Metamia Ciampricotti</a>,
+              <a href="https://www.mskcc.org/research/ski/profile/besnik-qeriqi">Besnik Qeriqi</a>,
+              <a href="https://www.mskcc.org/research-areas/labs/members/amber-bahr">Amber Bahr</a>,
+              <a href="https://www.mskcc.org/research/ski/profile/elisa-de-stanchina">Elisa de Stanchina</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/umesh-bhanot">Umesh K Bhanot</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/w-victoria-lai">W Victoria Lai</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/matthew-bott">Matthew J Bott</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/david-jones">David R Jones</a>,
+              <a href="https://www.linkedin.com/in/arvin-eric-ruiz-71a6a864/">Arvin Ruiz</a>, 
+              <a href="https://synapse.mskcc.org/synapse/people/21371">Marina K Baine</a>,
+              <a href="https://www.mskcc.org/research-areas/labs/members/yanyun-li">Yanyun Li</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/natasha-rekhtman">Natasha Rekhtman</a>,
+              <a href="https://med.nyu.edu/faculty/john-t-poirier">John T Poirier</a>, 
+              <a href="https://www.mskcc.org/research/ski/labs/members/tal-nawy">Tal Nawy</a>,
+              <a href="https://www.mskcc.org/research-areas/labs/members/triparna-sen">Triparna Sen</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/members/linas-mazutis">Linas Mazutis</a>,
+              <a href="https://www.mskcc.org/cancer-care/doctors/travis-hollmann">Travis J Hollmann</a>,
+              <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>,
+              <a href="https://www.mskcc.org/research-areas/labs/charles-rudin">Charles M Rudin</a>
+              <br>
+							<em>Cancer Cell</em>, 2021
+              <br>
+<!--               <a href="https://markboss.me/publication/2021-neural-pil/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=p5cKaNwVp4M">video</a> / -->
+              <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">Paper</a>
+              <p></p>
+              <p>
+<!--               Replacing a costly illumination integral with a simple network query enables more accurate novel view-synthesis and relighting compared to NeRD. -->
+              </p>
+            </td>
+          </tr>
+					
 
-        <div class="icons" style="position: relative; top: 27%">
-          <a href="https://github.com/jameslwang">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
+        </tbody></table>
 
-          <a href="mailto:wang.james@columbia.edu">
-            <i class="fa fa-paper-plane"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/jameswang1279">
-            <i class="fa fa-linkedin"></i>
-          </a>
-
-          <a href="https://engineering.columbia.edu/egleston-scholars/james-wang">
-            <i class="fa fa-university" aria-hidden="true"></i>
-          </a>
-
-          <a href="https://jameslwang.s3.amazonaws.com/WangJames_Resume.pdf">
-            <i class="fa fa-file" aria-hidden="true"></i>
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-
-  </body>
-
-  <div id="constructModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2>Still Under Construction!</h2>
-		<p>Check Back Later!</p>
-	</div>
-</div>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Teaching</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td width="100%" valign="center">
+             I enjoy teaching and have been working with Prof. <a href="https://tonydear.github.io/">Tony Dear</a> and Prof. <a href="https://www.peterbelhumeur.com/">Peter Belhumeur</a> for the following courses:
+             <br>
+             <ul>
+               <li>COMS 3251: Computational Linear Algebra (Spring 2021)</li>
+               <li>COMS 4701: Artificial Intelligence (Summer 2021) </li>
+               <li>COMS 4733: Computational Aspects of Robotics (Fall 2021)
+              <li>COMS 4995: Deep Learning for Computer Vision (Fall 2020, Fall 2021) </li>
+             </ul>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+            
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
 
 </html>
