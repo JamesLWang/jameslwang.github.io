@@ -5,7 +5,7 @@
   
   <meta name="author" content="James Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,7 +14,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-165349611-1');
 </script>
 
@@ -33,6 +32,7 @@
               <p> I am a recent graduate of Columbia University, with a M.S. and B.S. degree in Computer Science. I am currently an Applied Machine Learning Engineer at <a href="https://www.snorkel.ai/">Snorkel AI</a>. Previously, I was a Machine Learning Engineer at <a href="https://www.atlassian.com/">Atlassian</a>, where I worked on search relevance and ML infrastructure.  I'm interested in computer vision, computational biology, and the security and robustness of machine learning systems. If you are interested in these things as well, let's chat!
               <p style="text-align:center">
                 <a href="mailto:jlw2247@columbia.edu">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=Aw4pxqYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/jameslwang/">Github</a> &nbsp/&nbsp
                 <a href="https://linkedin.com/in/jameswang1279/">Linkedin</a>
               </p>
@@ -53,6 +53,46 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="npil_stop()" onmouseover="npil_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='npil_image'>
+                  <img src='images/RAFT.png' width="180"></div>
+                <img src='images/RAFT.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function npil_start() {
+                  document.getElementById('npil_image').style.opacity = "1";
+                }
+
+                function npil_stop() {
+                  document.getElementById('npil_image').style.opacity = "0";
+                }
+                npil_stop()
+              </script>
+
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://aclanthology.org/2024.emnlp-main.939.pdf">
+                <papertitle>RAFT: Realistic Attacks to Fool Text Detectors</papertitle>
+              </a>
+              <br>
+              <strong>James L Wang</strong>,
+              <a href="https://www.linkedin.com/in/ranhenryli/">Ran Li</a>, 
+              <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>
+              <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>, 
+              <br>
+              <em>EMNLP</em>, 2024
+              <br>
+              <a href="https://aclanthology.org/2024.emnlp-main.939.pdf">Paper</a>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>
+
 
 
 					 <tr onmouseout="npil_stop()" onmouseover="npil_start()">
@@ -76,7 +116,7 @@
             </td>
             
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">
+              <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">
                 <papertitle>Causal Transportability for Visual Recognition</papertitle>
               </a>
               <br>
@@ -164,12 +204,9 @@
               <br>
 							<em>Cancer Cell</em>, 2021
               <br>
-<!--               <a href="https://markboss.me/publication/2021-neural-pil/">project page</a> /
-              <a href="https://www.youtube.com/watch?v=p5cKaNwVp4M">video</a> / -->
               <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">Paper</a>
               <p></p>
               <p>
-<!--               Replacing a costly illumination integral with a simple network query enables more accurate novel view-synthesis and relighting compared to NeRD. -->
               </p>
             </td>
           </tr>
@@ -177,7 +214,7 @@
 
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Projects</heading>
@@ -187,7 +224,7 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -227,7 +264,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                <i>Last updated: August 4, 2024</i>
+                <i>Last updated: November 13, 2024</i>
                 <br>
                 <br>
                 Source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
