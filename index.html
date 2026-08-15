@@ -1,281 +1,128 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>James Wang</title>
-  
   <meta name="author" content="James Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165349611-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-165349611-1');
-</script>
-
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165349611-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-165349611-1');
+  </script>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>James Wang</name>
-              </p>
-              <p> I am a recent graduate of Columbia University, with a M.S. and B.S. degree in Computer Science. I am currently an Applied Machine Learning Engineer at <a href="https://www.snorkel.ai/">Snorkel AI</a>. Previously, I was a Machine Learning Engineer at <a href="https://www.atlassian.com/">Atlassian</a>, where I worked on search relevance and ML infrastructure.  I'm interested in computer vision, computational biology, and the security and robustness of machine learning systems. If you are interested in these things as well, let's chat!
-              <p style="text-align:center">
-                <a href="mailto:jlw2247@columbia.edu">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=Aw4pxqYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/jameslwang/">Github</a> &nbsp/&nbsp
-                <a href="https://linkedin.com/in/jameswang1279/">Linkedin</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/james_wang.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/james_wang.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I have previously worked in Columbia's Computer Vision Lab advised by Prof. <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a> with PhD student <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a> and Columbia's Computational Biology Lab advised by Prof. <a href="https://www.azizilab.com/">Elham Azizi</a>. I have also worked in Prof. <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>'s group at Memorial Sloan-Kettering Cancer Center with PhD student <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <div class="page-bg" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="grid-overlay"></div>
+  </div>
 
-          <tr onmouseout="raft_stop()" onmouseover="raft_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='raft_image'>
-                  <img src='images/RAFT.png' width="180"></div>
-                <img src='images/RAFT.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function raft_start() {
-                  document.getElementById('raft_image').style.opacity = "1";
-                }
+  <main class="site-shell">
+    <section class="hero card reveal">
+      <div class="hero-content">
+        <p class="eyebrow">Applied Machine Learning Engineer</p>
+        <h1>James Wang</h1>
+        <p>
+          I am a recent graduate of Columbia University, with a M.S. and B.S. degree in Computer Science. I am currently an Applied Machine Learning Engineer at <a href="https://www.snorkel.ai/">Snorkel AI</a>. Previously, I was a Machine Learning Engineer at <a href="https://www.atlassian.com/">Atlassian</a>, where I worked on search relevance and ML infrastructure. I'm interested in computer vision, computational biology, and the security and robustness of machine learning systems. If you are interested in these things as well, let's chat!
+        </p>
+        <nav class="social-links" aria-label="Profiles">
+          <a href="mailto:jlw2247@columbia.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=Aw4pxqYAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://github.com/jameslwang/">Github</a>
+          <a href="https://linkedin.com/in/jameswang1279/">Linkedin</a>
+        </nav>
+      </div>
+      <a class="hero-photo" href="images/james_wang.png">
+        <img src="images/james_wang.png" alt="Profile photo of James Wang">
+      </a>
+    </section>
 
-                function raft_stop() {
-                  document.getElementById('raft_image').style.opacity = "0";
-                }
-                raft_stop()
-              </script>
+    <section class="section card section-research reveal delay-1">
+      <header class="section-heading">
+        <h2>Research</h2>
+        <p>
+          I have previously worked in Columbia's Computer Vision Lab advised by Prof. <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a> with PhD student <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a> and Columbia's Computational Biology Lab advised by Prof. <a href="https://www.azizilab.com/">Elham Azizi</a>. I have also worked in Prof. <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>'s group at Memorial Sloan-Kettering Cancer Center with PhD student <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>.
+        </p>
+      </header>
 
-            </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://aclanthology.org/2024.emnlp-main.939.pdf">
-                <papertitle>RAFT: Realistic Attacks to Fool Text Detectors</papertitle>
-              </a>
-              <br>
-              <strong>James L Wang</strong>,
-              <a href="https://www.linkedin.com/in/ranhenryli/">Ran Li</a>, 
-              <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>
-              <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>, 
-              <br>
-              <em>EMNLP</em>, 2024
-              <br>
-              <a href="https://aclanthology.org/2024.emnlp-main.939.pdf">Paper</a>
-              <p></p>
-              <p>
-              </p>
-            </td>
-          </tr>
+      <div class="research-list">
+        <article class="research-item">
+          <a class="paper-thumb" href="https://aclanthology.org/2024.emnlp-main.939.pdf">
+            <img src="images/RAFT.png" alt="RAFT paper visual abstract">
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://aclanthology.org/2024.emnlp-main.939.pdf">RAFT: Realistic Attacks to Fool Text Detectors</a></h3>
+            <p class="authors"><strong>James L Wang</strong>, <a href="https://www.linkedin.com/in/ranhenryli/">Ran Li</a>, <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>, <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a></p>
+            <p class="venue"><em>EMNLP</em>, 2024</p>
+            <p><a href="https://aclanthology.org/2024.emnlp-main.939.pdf">Paper</a></p>
+          </div>
+        </article>
 
+        <article class="research-item">
+          <a class="paper-thumb" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">
+            <img src="images/causalgraph.png" alt="Causal transportability paper visual abstract">
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">Causal Transportability for Visual Recognition</a></h3>
+            <p class="authors"><a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>, <a href="https://springo.github.io/">Kevin Xia</a>, <strong>James L Wang</strong>, <a href="http://www.wanghao.in/">Hao Wang</a>, <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>, <a href="https://causalai.net/">Elias Bareinboim</a>, <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a></p>
+            <p class="venue"><em>CVPR</em>, 2022</p>
+            <p><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">Paper</a></p>
+          </div>
+        </article>
 
+        <article class="research-item">
+          <a class="paper-thumb" href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">
+            <img src="images/image_abstract.jpeg" alt="Small cell lung cancer paper visual abstract">
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">Signatures of plasticity, metastasis, and immunosuppression in an atlas of human small cell lung cancer</a></h3>
+            <p class="authors"><a href="https://www.mskcc.org/research/ski/labs/members/joseph-chan">Joseph M Chan</a>, <a href="https://www.mskcc.org/research-areas/labs/members/alvaro-villalonga">Álvaro Quintanal-Villalonga</a>, <a href="https://www.mskcc.org/research/ski/labs/members/vianne-gao">Vianne Ran Gao</a>, <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>, <a href="https://www.sloankettering.edu/research-areas/labs/members/viola-allaj">Viola Allaj</a>, <a href="https://www.mskcc.org/research/ski/labs/members/ojasvi-chaudhary">Ojasvi Chaudhary</a>, <a href="https://www.mskcc.org/research/ski/labs/members/ignas-masilionis">Ignas Masilionis</a>, <a href="https://synapse.mskcc.org/synapse/people/21165-Jacklynn_Egger">Jacklynn Egger</a>, <a href="https://www.mskcc.org/cancer-care/doctors/andrew-chow">Andrew Chow</a>, <a href="https://www.mskcc.org/research/ski/labs/members/thomas-walle">Thomas Walle</a>, <a href="https://synapse.mskcc.org/synapse/people/17512-Marissa_Mattar">Marissa Mattar</a>, <a href="https://digvijayky.com/">Dig V K Yarlagadda</a>, <strong>James L Wang</strong>, <a href="https://www.mskcc.org/research-areas/labs/members/fathema-uddin">Fathema Uddin</a>, <a href="https://www.mskcc.org/cancer-care/doctors/michael-offin">Michael Offin</a>, <a href="https://www.mskcc.org/research-areas/labs/members/metamia-ciampricotti">Metamia Ciampricotti</a>, <a href="https://www.mskcc.org/research/ski/profile/besnik-qeriqi">Besnik Qeriqi</a>, <a href="https://www.mskcc.org/research-areas/labs/members/amber-bahr">Amber Bahr</a>, <a href="https://www.mskcc.org/research/ski/profile/elisa-de-stanchina">Elisa de Stanchina</a>, <a href="https://www.mskcc.org/cancer-care/doctors/umesh-bhanot">Umesh K Bhanot</a>, <a href="https://www.mskcc.org/cancer-care/doctors/w-victoria-lai">W Victoria Lai</a>, <a href="https://www.mskcc.org/cancer-care/doctors/matthew-bott">Matthew J Bott</a>, <a href="https://www.mskcc.org/cancer-care/doctors/david-jones">David R Jones</a>, <a href="https://www.linkedin.com/in/arvin-eric-ruiz-71a6a864/">Arvin Ruiz</a>, <a href="https://synapse.mskcc.org/synapse/people/21371">Marina K Baine</a>, <a href="https://www.mskcc.org/research-areas/labs/members/yanyun-li">Yanyun Li</a>, <a href="https://www.mskcc.org/cancer-care/doctors/natasha-rekhtman">Natasha Rekhtman</a>, <a href="https://med.nyu.edu/faculty/john-t-poirier">John T Poirier</a>, <a href="https://www.mskcc.org/research/ski/labs/members/tal-nawy">Tal Nawy</a>, <a href="https://www.mskcc.org/research-areas/labs/members/triparna-sen">Triparna Sen</a>, <a href="https://www.mskcc.org/research/ski/labs/members/linas-mazutis">Linas Mazutis</a>, <a href="https://www.mskcc.org/cancer-care/doctors/travis-hollmann">Travis J Hollmann</a>, <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>, <a href="https://www.mskcc.org/research-areas/labs/charles-rudin">Charles M Rudin</a></p>
+            <p class="venue"><em>Cancer Cell</em>, 2021</p>
+            <p><a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">Paper</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-					 <tr onmouseout="causal_stop()" onmouseover="causal_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='causal_image'>
-                  <img src='images/causalgraph.png' width="180"></div>
-                <img src='images/causalgraph.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function causal_start() {
-                  document.getElementById('causal_image').style.opacity = "1";
-                }
+    <section class="section card section-service reveal delay-2">
+      <header class="section-heading">
+        <h2>Service</h2>
+      </header>
+      <p>Reviewer: CVPR 2023</p>
+      <p>
+        I enjoy teaching and have worked with Prof. <a href="https://tonydear.github.io/">Tony Dear</a>, Prof. <a href="https://www.peterbelhumeur.com/">Peter Belhumeur</a>, and Prof. <a href="http://www.cs.columbia.edu/~verma/">Nakul Verma</a> for the following courses:
+      </p>
+      <div class="service-columns">
+        <div class="service-card">
+          <h3>Head Teaching Assistant</h3>
+          <ul>
+            <li>COMS 4701: Artificial Intelligence (Spring 2022)</li>
+            <li>COMS 4995: Deep Learning for Computer Vision (Fall 2021)</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Teaching Assistant</h3>
+          <ul>
+            <li>COMS 3251: Computational Linear Algebra (Spring 2021)</li>
+            <li>COMS 4701: Artificial Intelligence (Summer 2021)</li>
+            <li>COMS 4733: Computational Aspects of Robotics (Fall 2021)</li>
+            <li>COMS 4995: Deep Learning for Computer Vision (Fall 2020)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                function causal_stop() {
-                  document.getElementById('causal_image').style.opacity = "0";
-                }
-                causal_stop()
-              </script>
-
-            </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">
-                <papertitle>Causal Transportability for Visual Recognition</papertitle>
-              </a>
-              <br>
-
-              <a href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>, 
-              <a href="https://springo.github.io/">Kevin Xia</a>,
-              <strong>James L Wang</strong>,
-              <a href="http://www.wanghao.in/">Hao Wang</a>,
-              <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>,
-              <a href="https://causalai.net/">Elias Bareinboim</a>,
-              <a href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>
-              <br>
-              <em>CVPR</em>, 2022
-              <br>
-<!--               <a href="https://markboss.me/publication/2021-neural-pil/">project page</a> /
-              <a href="https://www.youtube.com/watch?v=p5cKaNwVp4M">video</a> / -->
-              <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mao_Causal_Transportability_for_Visual_Recognition_CVPR_2022_paper.pdf">Paper</a>
-              <p></p>
-              <p>
-<!--               Replacing a costly illumination integral with a simple network query enables more accurate novel view-synthesis and relighting compared to NeRD. -->
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="sclc_stop()" onmouseover="sclc_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='sclc_image'>
-                  <img src='images/image_abstract.jpeg' width="180"></div>
-                <img src='images/image_abstract.jpeg' width="180">
-              </div>
-              <script type="text/javascript">
-                function sclc_start() {
-                  document.getElementById('sclc_image').style.opacity = "1";
-                }
-
-                function sclc_stop() {
-                  document.getElementById('sclc_image').style.opacity = "0";
-                }
-                sclc_stop()
-              </script>
-
-            </td>
-
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">
-                <papertitle>Signatures of plasticity, metastasis, and immunosuppression in an atlas of human small cell lung cancer</papertitle>
-              </a>
-              <br>
-
-              <a href="https://www.mskcc.org/research/ski/labs/members/joseph-chan">Joseph M Chan</a>, 
-              <a href="https://www.mskcc.org/research-areas/labs/members/alvaro-villalonga">Álvaro Quintanal-Villalonga</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/vianne-gao">Vianne Ran Gao</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/yubin-xie">Yubin Xie</a>,
-              <a href="https://www.sloankettering.edu/research-areas/labs/members/viola-allaj">Viola Allaj</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/ojasvi-chaudhary">Ojasvi Chaudhary</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/ignas-masilionis">Ignas Masilionis</a>,
-              <a href="https://synapse.mskcc.org/synapse/people/21165-Jacklynn_Egger">Jacklynn Egger</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/andrew-chow">Andrew Chow</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/thomas-walle">Thomas Walle</a>,
-              <a href="https://synapse.mskcc.org/synapse/people/17512-Marissa_Mattar">Marissa Mattar</a>,
-              <a href="https://digvijayky.com/">Dig V K Yarlagadda</a>,
-              <strong>James L Wang</strong>,
-              <a href="https://www.mskcc.org/research-areas/labs/members/fathema-uddin">Fathema Uddin</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/michael-offin">Michael Offin</a>,
-              <a href="https://www.mskcc.org/research-areas/labs/members/metamia-ciampricotti">Metamia Ciampricotti</a>,
-              <a href="https://www.mskcc.org/research/ski/profile/besnik-qeriqi">Besnik Qeriqi</a>,
-              <a href="https://www.mskcc.org/research-areas/labs/members/amber-bahr">Amber Bahr</a>,
-              <a href="https://www.mskcc.org/research/ski/profile/elisa-de-stanchina">Elisa de Stanchina</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/umesh-bhanot">Umesh K Bhanot</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/w-victoria-lai">W Victoria Lai</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/matthew-bott">Matthew J Bott</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/david-jones">David R Jones</a>,
-              <a href="https://www.linkedin.com/in/arvin-eric-ruiz-71a6a864/">Arvin Ruiz</a>, 
-              <a href="https://synapse.mskcc.org/synapse/people/21371">Marina K Baine</a>,
-              <a href="https://www.mskcc.org/research-areas/labs/members/yanyun-li">Yanyun Li</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/natasha-rekhtman">Natasha Rekhtman</a>,
-              <a href="https://med.nyu.edu/faculty/john-t-poirier">John T Poirier</a>, 
-              <a href="https://www.mskcc.org/research/ski/labs/members/tal-nawy">Tal Nawy</a>,
-              <a href="https://www.mskcc.org/research-areas/labs/members/triparna-sen">Triparna Sen</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/members/linas-mazutis">Linas Mazutis</a>,
-              <a href="https://www.mskcc.org/cancer-care/doctors/travis-hollmann">Travis J Hollmann</a>,
-              <a href="https://www.mskcc.org/research/ski/labs/dana-pe-er">Dana Pe'er</a>,
-              <a href="https://www.mskcc.org/research-areas/labs/charles-rudin">Charles M Rudin</a>
-              <br>
-							<em>Cancer Cell</em>, 2021
-              <br>
-              <a href="https://www.sciencedirect.com/science/article/pii/S1535610821004979?via%3Dihub">Paper</a>
-              <p></p>
-              <p>
-              </p>
-            </td>
-          </tr>
-					
-
-        </tbody></table>
-
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Projects</heading>
-              <p>
-               Coming Soon!
-            </p>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Service</heading>
-              <p>
-                Reviewer: CVPR 2023
-                <br><br>
-                I enjoy teaching and have worked with Prof. <a href="https://tonydear.github.io/">Tony Dear</a>, Prof. <a href="https://www.peterbelhumeur.com/">Peter Belhumeur</a>, and Prof. <a href="http://www.cs.columbia.edu/~verma/">Nakul Verma</a> for the following courses:
-             <br>
-             <ul>
-              Head Teaching Assistant:
-              <ul>
-                <li> COMS 4701: Artificial Intelligence (Spring 2022) </li>
-                <li> COMS 4995: Deep Learning for Computer Vision (Fall 2021) </li>
-              </ul>
-             </ul>
-             <ul>
-              Teaching Assistant:
-              <ul>
-               <li>COMS 3251: Computational Linear Algebra (Spring 2021)</li>
-               <li>COMS 4701: Artificial Intelligence (Summer 2021) </li>
-               <li>COMS 4733: Computational Aspects of Robotics (Fall 2021)</li>
-                <li>COMS 4995: Deep Learning for Computer Vision (Fall 2020) </li>
-             </ul>
-            </ul>
-            </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                <i>Last updated: November 13, 2024</i>
-                <br>
-                <br>
-                Source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
-          
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <footer class="footer reveal delay-3">
+      <p><i>Last updated: November 13, 2024</i></p>
+      <p>Source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
+    </footer>
+  </main>
 </body>
-
 </html>
+
